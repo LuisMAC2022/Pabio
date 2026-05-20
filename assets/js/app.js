@@ -1,0 +1,11 @@
+import {readDB,writeDB} from './storage.js';
+import {renderCrearOrden} from './views/crear-orden.view.js';
+import {renderOrdenes} from './views/ordenes.view.js';
+import {renderdetalle_orden} from './views/detalle-orden.view.js';
+import {renderinventario} from './views/inventario.view.js';
+import {renderagregar_material} from './views/agregar-material.view.js';
+import {rendercontrastar_orden} from './views/contrastar-orden.view.js';
+import {rendergenerar_solicitud} from './views/generar-solicitud.view.js';
+import {rendersolicitudes} from './views/solicitudes.view.js';
+const views={'crear-orden':renderCrearOrden,ordenes:renderOrdenes,'detalle-orden':renderdetalle_orden,inventario:renderinventario,'agregar-material':renderagregar_material,'contrastar-orden':rendercontrastar_orden,'generar-solicitud':rendergenerar_solicitud,solicitudes:rendersolicitudes};
+(function bootstrap(){const db=readDB();if(!db.inventario.length){fetch((location.pathname.includes('/pages/')?'../':'')+'data/seed-inventario.json').then(r=>r.json()).then(seed=>{writeDB({...readDB(),inventario:seed});}).catch(()=>{});}const view=document.body.dataset.view;const root=document.querySelector('#app');if(root&&views[view])views[view](root)})();

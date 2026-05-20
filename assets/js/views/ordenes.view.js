@@ -1,0 +1,2 @@
+import {listarOrdenes} from '../modules/ordenes.js';
+export function renderOrdenes(root){const rows=listarOrdenes().map(o=>`<tr><td>${o.folio}</td><td>${o.cliente||'-'}</td><td><span class="tag">${o.estado}</span></td></tr>`).join('');root.innerHTML=`<table><thead><tr><th>Folio</th><th>Cliente</th><th>Estado</th></tr></thead><tbody>${rows||'<tr><td colspan="3">Sin órdenes</td></tr>'}</tbody></table>`}
