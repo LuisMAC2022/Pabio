@@ -1,1 +1,37 @@
-[{"sku":"MAT-001","nombre":"Acero A36","cantidadDisponible":120,"cantidadReservada":15},{"sku":"MAT-002","nombre":"Pintura epóxica","cantidadDisponible":40,"cantidadReservada":5}]
+[
+  {
+    "sku": "MAT-101",
+    "nombre": "Llave mezcladora",
+    "cantidadDisponible": 1,
+    "cantidadReservada": 0,
+    "unidad": "pieza"
+  },
+  {
+    "sku": "MAT-102",
+    "nombre": "Guantes de látex",
+    "cantidadDisponible": 20,
+    "cantidadReservada": 0,
+    "unidad": "par"
+  },
+  {
+    "sku": "MAT-103",
+    "nombre": "Foco LED 12W",
+    "cantidadDisponible": 10,
+    "cantidadReservada": 0,
+    "unidad": "pieza"
+  },
+  {
+    "sku": "MAT-104",
+    "nombre": "Cinta aislante",
+    "cantidadDisponible": 3,
+    "cantidadReservada": 0,
+    "unidad": "pieza"
+  },
+  {
+    "sku": "MAT-105",
+    "nombre": "Detergente multiusos",
+    "cantidadDisponible": 5,
+    "cantidadReservada": 0,
+    "unidad": "litro"
+  }
+]
