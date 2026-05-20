@@ -1,0 +1,1 @@
+.skip-link{position:absolute;left:-9999px;top:0}.skip-link:focus{left:.5rem;top:.5rem;background:#000;color:#fff;padding:.5rem;z-index:999}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
