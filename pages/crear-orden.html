@@ -107,6 +107,8 @@
     const descripcionError = document.getElementById("descripcion-error");
 
     let idsDirectorio = new Set();
+    let directorioCargado = false;
+    let directorioError = false;
 
     function sanitizarPdf(texto) {
       return texto.replace(/\\/g, "\\\\").replace(/\(/g, "\\(").replace(/\)/g, "\\)").replace(/\n/g, " ");
@@ -153,17 +155,26 @@
       actualizarEstadoFinalizar();
     }
 
-    async function cargarDirectorio() {
-      const respuesta = await fetch("../data/directorio.json", { cache: "no-store" });
-      const data = await respuesta.json();
-      idsDirectorio = new Set((data.registros || []).map((item) => item.colaborador_id));
-    }
-
-    btnValidar.addEventListener("click", () => {
+    function validarId() {
       const numero = idInput.value.trim();
       const baseValida = /^\d{5}$/.test(numero);
 
+      if (!directorioCargado || directorioError) {
+        estado.idNumero = "";
+        estado.idCompleto = "";
+        estado.idValido = false;
+        idError.textContent = "No se pudo cargar el directorio de IDs.";
+        estadoMsg.textContent = "No se pudo cargar el directorio de IDs. Intenta de nuevo más tarde.";
+        pasoTipo.disabled = true;
+        pasoCategoria.disabled = true;
+        pasoDescripcion.disabled = true;
+        actualizarEstadoFinalizar();
+        return false;
+      }
+
       if (!baseValida) {
+        estado.idNumero = "";
+        estado.idCompleto = "";
         estado.idValido = false;
         idError.textContent = "Captura exactamente 5 dígitos.";
         estadoMsg.textContent = "El ID no cumple el formato esperado.";
@@ -171,11 +182,13 @@
         pasoCategoria.disabled = true;
         pasoDescripcion.disabled = true;
         actualizarEstadoFinalizar();
-        return;
+        return false;
       }
 
       const idCompleto = `IB-PA-${numero}`;
       if (!idsDirectorio.has(idCompleto)) {
+        estado.idNumero = numero;
+        estado.idCompleto = idCompleto;
         estado.idValido = false;
         idError.textContent = "ID no localizado en la base de datos";
         estadoMsg.textContent = "ID no localizado en la base de datos";
@@ -183,7 +196,7 @@
         pasoCategoria.disabled = true;
         pasoDescripcion.disabled = true;
         actualizarEstadoFinalizar();
-        return;
+        return false;
       }
 
       estado.idNumero = numero;
@@ -192,8 +205,33 @@
       idError.textContent = "";
       estadoMsg.textContent = `ID validado: ${idCompleto}. Continúa con el tipo de servicio.`;
       pasoTipo.disabled = false;
+      pasoCategoria.disabled = !estado.tipoServicio;
+      pasoDescripcion.disabled = !estado.categoriaServicio;
       actualizarEstadoFinalizar();
+      return true;
+    }
+
+    async function cargarDirectorio() {
+      const respuesta = await fetch("../data/directorio.json", { cache: "no-store" });
+      const data = await respuesta.json();
+      idsDirectorio = new Set((data.registros || []).map((item) => item.colaborador_id));
+      directorioCargado = true;
+      directorioError = false;
+    }
+
+    btnValidar.addEventListener("click", () => {
+      validarId();
     });
+
+    const btnSiguientePaso1 = document.querySelector('[data-step="1"] .btn-siguiente, #btn-siguiente-paso-1, .btn-siguiente-paso-1');
+    if (btnSiguientePaso1) {
+      btnSiguientePaso1.addEventListener("click", (event) => {
+        const ok = validarId();
+        if (!ok) {
+          event.preventDefault();
+        }
+      });
+    }
 
     form.tipoServicio.forEach((radio) => {
       radio.addEventListener("change", (event) => {
@@ -242,8 +280,18 @@
     });
 
     cargarDirectorio().catch(() => {
+      directorioCargado = false;
+      directorioError = true;
+      estado.idNumero = "";
+      estado.idCompleto = "";
+      estado.idValido = false;
+      idError.textContent = "No se pudo cargar el directorio de IDs.";
       estadoMsg.textContent = "No se pudo cargar el directorio de IDs. Intenta de nuevo más tarde.";
+      pasoTipo.disabled = true;
+      pasoCategoria.disabled = true;
+      pasoDescripcion.disabled = true;
       btnValidar.disabled = true;
+      actualizarEstadoFinalizar();
     });
   </script>
 </body>
