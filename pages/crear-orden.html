@@ -40,7 +40,7 @@
           <label for="id-numero">Número de ID (5 dígitos)</label>
           <input id="id-numero" name="idNumero" type="text" inputmode="numeric" autocomplete="off" pattern="[0-9]{5}" maxlength="5" minlength="5" required aria-describedby="id-ayuda id-error">
           <p id="id-ayuda">Se completará automáticamente como <strong>IB-PA-XXXXX</strong>.</p>
-          <p id="id-error"></p>
+          <p id="id-error" role="status" aria-live="polite"></p>
           <button type="button" id="btn-validar-id">Validar ID</button>
         </fieldset>
 
@@ -106,6 +106,28 @@
     const idError = document.getElementById("id-error");
     const descripcionError = document.getElementById("descripcion-error");
 
+    function setEstadoError(mensaje) {
+      estadoMsg.textContent = mensaje;
+      estadoMsg.classList.add("mensaje-error");
+      estadoMsg.setAttribute("role", "alert");
+      estadoMsg.setAttribute("aria-live", "assertive");
+    }
+
+    function setEstadoInformativo(mensaje) {
+      estadoMsg.textContent = mensaje;
+      estadoMsg.classList.remove("mensaje-error");
+      estadoMsg.setAttribute("role", "status");
+      estadoMsg.setAttribute("aria-live", "polite");
+    }
+
+    function setIdError(mensaje) {
+      idError.textContent = mensaje;
+      const hayError = Boolean(mensaje);
+      idError.classList.toggle("mensaje-error", hayError);
+      idError.setAttribute("role", hayError ? "alert" : "status");
+      idError.setAttribute("aria-live", hayError ? "assertive" : "polite");
+    }
+
     let idsDirectorio = new Set();
 
     function sanitizarPdf(texto) {
@@ -165,8 +187,8 @@
 
       if (!baseValida) {
         estado.idValido = false;
-        idError.textContent = "Captura exactamente 5 dígitos.";
-        estadoMsg.textContent = "El ID no cumple el formato esperado.";
+        setIdError("Captura exactamente 5 dígitos.");
+        setEstadoError("El ID no cumple el formato esperado.");
         pasoTipo.disabled = true;
         pasoCategoria.disabled = true;
         pasoDescripcion.disabled = true;
@@ -177,8 +199,8 @@
       const idCompleto = `IB-PA-${numero}`;
       if (!idsDirectorio.has(idCompleto)) {
         estado.idValido = false;
-        idError.textContent = "ID no localizado en la base de datos";
-        estadoMsg.textContent = "ID no localizado en la base de datos";
+        setIdError("ID no localizado en la base de datos");
+        setEstadoError("ID no localizado en la base de datos");
         pasoTipo.disabled = true;
         pasoCategoria.disabled = true;
         pasoDescripcion.disabled = true;
@@ -189,8 +211,8 @@
       estado.idNumero = numero;
       estado.idCompleto = idCompleto;
       estado.idValido = true;
-      idError.textContent = "";
-      estadoMsg.textContent = `ID validado: ${idCompleto}. Continúa con el tipo de servicio.`;
+      setIdError("");
+      setEstadoInformativo(`ID validado: ${idCompleto}. Continúa con el tipo de servicio.`);
       pasoTipo.disabled = false;
       actualizarEstadoFinalizar();
     });
@@ -238,11 +260,11 @@
       link.remove();
       URL.revokeObjectURL(url);
 
-      estadoMsg.textContent = `Orden finalizada. Se descargó ${nombreArchivo}.`;
+      setEstadoInformativo(`Orden finalizada. Se descargó ${nombreArchivo}.`);
     });
 
     cargarDirectorio().catch(() => {
-      estadoMsg.textContent = "No se pudo cargar el directorio de IDs. Intenta de nuevo más tarde.";
+      setEstadoError("No se pudo cargar el directorio de IDs. Intenta de nuevo más tarde.");
       btnValidar.disabled = true;
     });
   </script>
