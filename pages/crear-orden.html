@@ -9,11 +9,6 @@
   <link rel="stylesheet" href="../assets/css/components.css">
   <link rel="stylesheet" href="../assets/css/a11y.css">
   <script type="module" src="../assets/js/app.js" defer></script>
-  <style>
-    #form-crear-orden { padding-bottom: 5rem; }
-    .wizard-nav { position: sticky; bottom: 0; background: #fff; border-top: 1px solid #d1d5db; padding-top: .75rem; display: flex; gap: .75rem; }
-    .wizard-nav .btn { flex: 1; min-height: 2.75rem; }
-  </style>
 </head>
 <body data-view="crear-orden">
   <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
@@ -40,51 +35,43 @@
       <p id="mensajes-estado" role="status" aria-live="polite"></p>
 
       <form id="form-crear-orden" novalidate>
-        <p id="wizard-estado" aria-live="polite" class="sr-only"></p>
-        <p id="paso-estado" role="status" aria-live="polite">Paso 1 de 5</p>
-
-        <section data-step="1" aria-labelledby="paso-1-titulo" tabindex="-1">
-          <h2 id="paso-1-titulo">Paso 1: Validar ID de colaborador</h2>
+        <fieldset>
+          <legend><h2>Paso 1: Validar ID de colaborador</h2></legend>
           <label for="id-numero">Número de ID (5 dígitos)</label>
           <input id="id-numero" name="idNumero" type="text" inputmode="numeric" autocomplete="off" pattern="[0-9]{5}" maxlength="5" minlength="5" required aria-describedby="id-ayuda id-error">
           <p id="id-ayuda">Se completará automáticamente como <strong>IB-PA-XXXXX</strong>.</p>
           <p id="id-error"></p>
-          <button type="button" id="btn-validar-id" class="btn">Validar ID</button>
-        </section>
+          <button type="button" id="btn-validar-id">Validar ID</button>
+        </fieldset>
 
-        <section data-step="2" aria-labelledby="paso-2-titulo" tabindex="-1" hidden>
-          <h2 id="paso-2-titulo">Paso 2: Tipo de servicio</h2>
+        <fieldset id="paso-tipo" disabled>
+          <legend><h2>Paso 2: Tipo de servicio</h2></legend>
           <p>Selecciona un tipo.</p>
           <label><input type="radio" name="tipoServicio" value="Infraestructura" required> Infraestructura</label>
           <label><input type="radio" name="tipoServicio" value="Equipos y Vehiculos" required> Equipos y Vehículos</label>
-        </section>
+        </fieldset>
 
-        <section data-step="3" aria-labelledby="paso-3-titulo" tabindex="-1" hidden>
-          <h2 id="paso-3-titulo">Paso 3: Categoría del servicio</h2>
+        <fieldset id="paso-categoria" disabled>
+          <legend><h2>Paso 3: Categoría del servicio</h2></legend>
           <label for="categoria-servicio">Categoría</label>
           <select id="categoria-servicio" name="categoriaServicio" required aria-describedby="categoria-ayuda">
             <option value="">Selecciona una categoría</option>
           </select>
           <p id="categoria-ayuda">Las categorías dependen del tipo de servicio seleccionado.</p>
-        </section>
+        </fieldset>
 
-        <section data-step="4" aria-labelledby="paso-4-titulo" tabindex="-1" hidden>
-          <h2 id="paso-4-titulo">Paso 4: Descripción del problema</h2>
+        <fieldset id="paso-descripcion" disabled>
+          <legend><h2>Paso 4: Descripción del problema</h2></legend>
           <label for="descripcion">Descripción</label>
           <textarea id="descripcion" name="descripcion" rows="5" minlength="20" required aria-describedby="descripcion-ayuda descripcion-error"></textarea>
           <p id="descripcion-ayuda">Mínimo 20 caracteres para poder finalizar.</p>
           <p id="descripcion-error"></p>
-        </section>
+        </fieldset>
 
-        <section data-step="5" aria-labelledby="paso-5-titulo" tabindex="-1" hidden>
-          <h2 id="paso-5-titulo">Paso 5: Finalizar</h2>
-          <button type="submit" id="btn-finalizar" class="btn" disabled>Finalizar y descargar PDF</button>
+        <section aria-labelledby="paso-finalizar">
+          <h2 id="paso-finalizar">Paso 5: Finalizar</h2>
+          <button type="submit" id="btn-finalizar" disabled>Finalizar y descargar PDF</button>
         </section>
-
-        <nav aria-label="Navegación de pasos" class="wizard-nav">
-          <button type="button" id="btn-anterior" class="btn secondary" disabled>Atrás</button>
-          <button type="button" id="btn-siguiente" class="btn" disabled>Siguiente</button>
-        </nav>
       </form>
     </section>
   </main>
@@ -109,13 +96,9 @@
     const form = document.getElementById("form-crear-orden");
     const idInput = document.getElementById("id-numero");
     const btnValidar = document.getElementById("btn-validar-id");
-    const stepSections = Array.from(form.querySelectorAll("[data-step]"));
-    const pasoEstado = document.getElementById("paso-estado");
-    const liveWizard = document.getElementById("wizard-estado");
-    const btnAnterior = document.getElementById("btn-anterior");
-    const btnSiguiente = document.getElementById("btn-siguiente");
-    const totalPasos = stepSections.length;
-    let currentStep = 0;
+    const pasoTipo = document.getElementById("paso-tipo");
+    const pasoCategoria = document.getElementById("paso-categoria");
+    const pasoDescripcion = document.getElementById("paso-descripcion");
     const selectCategoria = document.getElementById("categoria-servicio");
     const descripcion = document.getElementById("descripcion");
     const btnFinalizar = document.getElementById("btn-finalizar");
@@ -148,38 +131,10 @@
       return new Blob([pdf], { type: "application/pdf" });
     }
 
-
-    function validarPaso(index) {
-      if (index === 0) return estado.idValido;
-      if (index === 1) return Boolean(estado.tipoServicio);
-      if (index === 2) return Boolean(estado.categoriaServicio);
-      if (index === 3) return descripcion.value.trim().length >= 20;
-      return btnFinalizar.disabled === false;
-    }
-
-    function actualizarNavegacion() {
-      pasoEstado.textContent = `Paso ${currentStep + 1} de ${totalPasos}`;
-      btnAnterior.disabled = currentStep === 0;
-      btnSiguiente.textContent = currentStep === totalPasos - 1 ? "Finalizar" : "Siguiente";
-      btnSiguiente.disabled = !validarPaso(currentStep);
-    }
-
-    function mostrarPaso(index) {
-      currentStep = Math.max(0, Math.min(index, totalPasos - 1));
-      stepSections.forEach((section, idx) => {
-        section.hidden = idx !== currentStep;
-      });
-      const activo = stepSections[currentStep];
-      const titulo = activo.querySelector("h2")?.textContent || "";
-      liveWizard.textContent = `${titulo}. Paso ${currentStep + 1} de ${totalPasos}.`;
-      activo.focus();
-      actualizarNavegacion();
-    }
     function actualizarEstadoFinalizar() {
       const descripcionValida = descripcion.value.trim().length >= 20;
       const listo = estado.idValido && estado.tipoServicio && estado.categoriaServicio && descripcionValida;
       btnFinalizar.disabled = !listo;
-      actualizarNavegacion();
     }
 
     function mostrarCategorias(tipo) {
@@ -193,7 +148,8 @@
       }
       estado.categoriaServicio = "";
       selectCategoria.value = "";
-
+      pasoCategoria.disabled = !tipo;
+      pasoDescripcion.disabled = true;
       actualizarEstadoFinalizar();
     }
 
@@ -211,7 +167,9 @@
         estado.idValido = false;
         idError.textContent = "Captura exactamente 5 dígitos.";
         estadoMsg.textContent = "El ID no cumple el formato esperado.";
-
+        pasoTipo.disabled = true;
+        pasoCategoria.disabled = true;
+        pasoDescripcion.disabled = true;
         actualizarEstadoFinalizar();
         return;
       }
@@ -221,7 +179,9 @@
         estado.idValido = false;
         idError.textContent = "ID no localizado en la base de datos";
         estadoMsg.textContent = "ID no localizado en la base de datos";
-
+        pasoTipo.disabled = true;
+        pasoCategoria.disabled = true;
+        pasoDescripcion.disabled = true;
         actualizarEstadoFinalizar();
         return;
       }
@@ -231,23 +191,21 @@
       estado.idValido = true;
       idError.textContent = "";
       estadoMsg.textContent = `ID validado: ${idCompleto}. Continúa con el tipo de servicio.`;
-
+      pasoTipo.disabled = false;
       actualizarEstadoFinalizar();
-      mostrarPaso(1);
     });
 
     form.tipoServicio.forEach((radio) => {
       radio.addEventListener("change", (event) => {
         estado.tipoServicio = event.target.value;
         mostrarCategorias(estado.tipoServicio);
-        if (currentStep === 1) mostrarPaso(2);
       });
     });
 
     selectCategoria.addEventListener("change", () => {
       estado.categoriaServicio = selectCategoria.value;
+      pasoDescripcion.disabled = !estado.categoriaServicio;
       actualizarEstadoFinalizar();
-      if (currentStep === 2 && estado.categoriaServicio) mostrarPaso(3);
     });
 
     descripcion.addEventListener("input", () => {
@@ -256,20 +214,6 @@
       actualizarEstadoFinalizar();
     });
 
-
-    btnAnterior.addEventListener("click", () => {
-      mostrarPaso(currentStep - 1);
-    });
-
-    btnSiguiente.addEventListener("click", () => {
-      if (currentStep === totalPasos - 1) {
-        form.requestSubmit();
-        return;
-      }
-      if (validarPaso(currentStep)) {
-        mostrarPaso(currentStep + 1);
-      }
-    });
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       estado.descripcion = descripcion.value.trim();
@@ -296,8 +240,6 @@
 
       estadoMsg.textContent = `Orden finalizada. Se descargó ${nombreArchivo}.`;
     });
-
-    mostrarPaso(0);
 
     cargarDirectorio().catch(() => {
       estadoMsg.textContent = "No se pudo cargar el directorio de IDs. Intenta de nuevo más tarde.";
