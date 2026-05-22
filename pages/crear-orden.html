@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pabio | crear-orden</title>
+  <title>Pabio | Crear orden</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/components.css">
@@ -13,15 +13,238 @@
 <body data-view="crear-orden">
   <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
   <header class="site-header">
-    <div class="brand"><img src="../assets/img/logo-pabio.svg" alt="Logo Pabio" width="36" height="36"><h1>Pabio</h1></div>
-    <nav aria-label="Navegación principal"><ul class="nav-list"><li><a href="../index.html">Inicio</a></li><li><a href="ordenes.html">Órdenes</a></li><li><a href="inventario.html">Inventario</a></li><li><a href="solicitudes.html">Solicitudes</a></li></ul></nav>
+    <div class="brand">
+      <img src="../assets/img/logo-pabio.svg" alt="Logo Pabio" width="36" height="36">
+      <p aria-label="Nombre del sistema">Pabio</p>
+    </div>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="ordenes.html" aria-current="page">Órdenes</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="solicitudes.html">Solicitudes</a></li>
+      </ul>
+    </nav>
   </header>
+
   <main id="contenido" class="container">
-    <section>
-      <h2>crear-orden</h2>
-      <div id="app" aria-live="polite"></div>
+    <section aria-labelledby="crear-orden-titulo">
+      <h1 id="crear-orden-titulo">Crear orden de servicio</h1>
+      <p>Completa los pasos para validar tu ID, definir el tipo de servicio y descargar el resumen en PDF.</p>
+
+      <p id="mensajes-estado" role="status" aria-live="polite"></p>
+
+      <form id="form-crear-orden" novalidate>
+        <fieldset>
+          <legend><h2>Paso 1: Validar ID de colaborador</h2></legend>
+          <label for="id-numero">Número de ID (5 dígitos)</label>
+          <input id="id-numero" name="idNumero" type="text" inputmode="numeric" autocomplete="off" pattern="[0-9]{5}" maxlength="5" minlength="5" required aria-describedby="id-ayuda id-error">
+          <p id="id-ayuda">Se completará automáticamente como <strong>IB-PA-XXXXX</strong>.</p>
+          <p id="id-error"></p>
+          <button type="button" id="btn-validar-id">Validar ID</button>
+        </fieldset>
+
+        <fieldset id="paso-tipo" disabled>
+          <legend><h2>Paso 2: Tipo de servicio</h2></legend>
+          <p>Selecciona un tipo.</p>
+          <label><input type="radio" name="tipoServicio" value="Infraestructura" required> Infraestructura</label>
+          <label><input type="radio" name="tipoServicio" value="Equipos y Vehiculos" required> Equipos y Vehículos</label>
+        </fieldset>
+
+        <fieldset id="paso-categoria" disabled>
+          <legend><h2>Paso 3: Categoría del servicio</h2></legend>
+          <label for="categoria-servicio">Categoría</label>
+          <select id="categoria-servicio" name="categoriaServicio" required aria-describedby="categoria-ayuda">
+            <option value="">Selecciona una categoría</option>
+          </select>
+          <p id="categoria-ayuda">Las categorías dependen del tipo de servicio seleccionado.</p>
+        </fieldset>
+
+        <fieldset id="paso-descripcion" disabled>
+          <legend><h2>Paso 4: Descripción del problema</h2></legend>
+          <label for="descripcion">Descripción</label>
+          <textarea id="descripcion" name="descripcion" rows="5" minlength="20" required aria-describedby="descripcion-ayuda descripcion-error"></textarea>
+          <p id="descripcion-ayuda">Mínimo 20 caracteres para poder finalizar.</p>
+          <p id="descripcion-error"></p>
+        </fieldset>
+
+        <section aria-labelledby="paso-finalizar">
+          <h2 id="paso-finalizar">Paso 5: Finalizar</h2>
+          <button type="submit" id="btn-finalizar" disabled>Finalizar y descargar PDF</button>
+        </section>
+      </form>
     </section>
   </main>
+
   <footer class="site-footer"><small>Demo MVP Pabio</small></footer>
+
+  <script>
+    const catalogoCategorias = {
+      Infraestructura: ["Albañilería", "Carpintería", "Electricidad", "Herrería", "Pintura", "Plomería", "Otro"],
+      "Equipos y Vehiculos": ["Mecánica", "Refrigeración", "Aire Acondicionado", "Equipo de Computo", "Reparación de Equipo", "Planta de Luz", "Otro"]
+    };
+
+    const estado = {
+      idNumero: "",
+      idCompleto: "",
+      tipoServicio: "",
+      categoriaServicio: "",
+      descripcion: "",
+      idValido: false
+    };
+
+    const form = document.getElementById("form-crear-orden");
+    const idInput = document.getElementById("id-numero");
+    const btnValidar = document.getElementById("btn-validar-id");
+    const pasoTipo = document.getElementById("paso-tipo");
+    const pasoCategoria = document.getElementById("paso-categoria");
+    const pasoDescripcion = document.getElementById("paso-descripcion");
+    const selectCategoria = document.getElementById("categoria-servicio");
+    const descripcion = document.getElementById("descripcion");
+    const btnFinalizar = document.getElementById("btn-finalizar");
+    const estadoMsg = document.getElementById("mensajes-estado");
+    const idError = document.getElementById("id-error");
+    const descripcionError = document.getElementById("descripcion-error");
+
+    let idsDirectorio = new Set();
+
+    function sanitizarPdf(texto) {
+      return texto.replace(/\\/g, "\\\\").replace(/\(/g, "\\(").replace(/\)/g, "\\)").replace(/\n/g, " ");
+    }
+
+    function construirPdf(payload) {
+      const fecha = new Date();
+      const lineas = [
+        "Resumen de orden de servicio",
+        `ID: ${payload.idCompleto}`,
+        `Tipo de servicio: ${payload.tipoServicio}`,
+        `Categoría del servicio: ${payload.categoriaServicio}`,
+        `Descripción: ${payload.descripcion}`,
+        `Generado: ${fecha.toISOString()}`
+      ];
+
+      const contenido = lineas
+        .map((linea, indice) => `BT /F1 12 Tf 50 ${770 - indice * 20} Td (${sanitizarPdf(linea)}) Tj ET`)
+        .join("\n");
+
+      const pdf = `%PDF-1.4\n1 0 obj<< /Type /Catalog /Pages 2 0 R >>endobj\n2 0 obj<< /Type /Pages /Kids [3 0 R] /Count 1 >>endobj\n3 0 obj<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>endobj\n4 0 obj<< /Length ${contenido.length} >>stream\n${contenido}\nendstream\nendobj\n5 0 obj<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>endobj\nxref\n0 6\n0000000000 65535 f \n0000000010 00000 n \n0000000062 00000 n \n0000000120 00000 n \n0000000270 00000 n \n0000000000 00000 n \ntrailer<< /Size 6 /Root 1 0 R >>\nstartxref\n0\n%%EOF`;
+      return new Blob([pdf], { type: "application/pdf" });
+    }
+
+    function actualizarEstadoFinalizar() {
+      const descripcionValida = descripcion.value.trim().length >= 20;
+      const listo = estado.idValido && estado.tipoServicio && estado.categoriaServicio && descripcionValida;
+      btnFinalizar.disabled = !listo;
+    }
+
+    function mostrarCategorias(tipo) {
+      selectCategoria.innerHTML = '<option value="">Selecciona una categoría</option>';
+      const categorias = catalogoCategorias[tipo] || [];
+      for (const categoria of categorias) {
+        const option = document.createElement("option");
+        option.value = categoria;
+        option.textContent = categoria;
+        selectCategoria.append(option);
+      }
+      estado.categoriaServicio = "";
+      selectCategoria.value = "";
+      pasoCategoria.disabled = !tipo;
+      pasoDescripcion.disabled = true;
+      actualizarEstadoFinalizar();
+    }
+
+    async function cargarDirectorio() {
+      const respuesta = await fetch("../data/directorio.json", { cache: "no-store" });
+      const data = await respuesta.json();
+      idsDirectorio = new Set((data.registros || []).map((item) => item.colaborador_id));
+    }
+
+    btnValidar.addEventListener("click", () => {
+      const numero = idInput.value.trim();
+      const baseValida = /^\d{5}$/.test(numero);
+
+      if (!baseValida) {
+        estado.idValido = false;
+        idError.textContent = "Captura exactamente 5 dígitos.";
+        estadoMsg.textContent = "El ID no cumple el formato esperado.";
+        pasoTipo.disabled = true;
+        pasoCategoria.disabled = true;
+        pasoDescripcion.disabled = true;
+        actualizarEstadoFinalizar();
+        return;
+      }
+
+      const idCompleto = `IB-PA-${numero}`;
+      if (!idsDirectorio.has(idCompleto)) {
+        estado.idValido = false;
+        idError.textContent = "ID no localizado en la base de datos";
+        estadoMsg.textContent = "ID no localizado en la base de datos";
+        pasoTipo.disabled = true;
+        pasoCategoria.disabled = true;
+        pasoDescripcion.disabled = true;
+        actualizarEstadoFinalizar();
+        return;
+      }
+
+      estado.idNumero = numero;
+      estado.idCompleto = idCompleto;
+      estado.idValido = true;
+      idError.textContent = "";
+      estadoMsg.textContent = `ID validado: ${idCompleto}. Continúa con el tipo de servicio.`;
+      pasoTipo.disabled = false;
+      actualizarEstadoFinalizar();
+    });
+
+    form.tipoServicio.forEach((radio) => {
+      radio.addEventListener("change", (event) => {
+        estado.tipoServicio = event.target.value;
+        mostrarCategorias(estado.tipoServicio);
+      });
+    });
+
+    selectCategoria.addEventListener("change", () => {
+      estado.categoriaServicio = selectCategoria.value;
+      pasoDescripcion.disabled = !estado.categoriaServicio;
+      actualizarEstadoFinalizar();
+    });
+
+    descripcion.addEventListener("input", () => {
+      estado.descripcion = descripcion.value.trim();
+      descripcionError.textContent = estado.descripcion.length < 20 ? "La descripción debe tener al menos 20 caracteres." : "";
+      actualizarEstadoFinalizar();
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      estado.descripcion = descripcion.value.trim();
+
+      if (estado.descripcion.length < 20) {
+        descripcionError.textContent = "La descripción debe tener al menos 20 caracteres.";
+        actualizarEstadoFinalizar();
+        return;
+      }
+
+      const ahora = new Date();
+      const sello = `${ahora.getFullYear()}${String(ahora.getMonth() + 1).padStart(2, "0")}${String(ahora.getDate()).padStart(2, "0")}_${String(ahora.getHours()).padStart(2, "0")}${String(ahora.getMinutes()).padStart(2, "0")}`;
+      const nombreArchivo = `orden_${estado.idCompleto}_${sello}.pdf`;
+      const blob = construirPdf(estado);
+
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = nombreArchivo;
+      document.body.append(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+
+      estadoMsg.textContent = `Orden finalizada. Se descargó ${nombreArchivo}.`;
+    });
+
+    cargarDirectorio().catch(() => {
+      estadoMsg.textContent = "No se pudo cargar el directorio de IDs. Intenta de nuevo más tarde.";
+      btnValidar.disabled = true;
+    });
+  </script>
 </body>
 </html>
