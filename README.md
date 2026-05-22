@@ -17,5 +17,9 @@ El proposito es:
 4. Contrastar y generar solicitud de compra.
 5. Cumplimiento de orden.
 
+
+Actualmente se esta desarrollando el modulo 1, generado de ordenes. Se pueden probar los avances en 
+luismac2022.github.io/Pabio
+
 6. Caso Baja (misma tabla).
 7. Lecciones y siguientes pasos.
