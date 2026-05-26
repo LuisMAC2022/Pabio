@@ -59,7 +59,12 @@
           }
 
           const directory = await response.json();
-          const match = directory.find((entry) => String(entry.id_fuente) === normalized);
+          const entries = Array.isArray(directory)
+            ? directory
+            : Array.isArray(directory?.registros)
+              ? directory.registros
+              : [];
+          const match = entries.find((entry) => String(entry.id_fuente) === normalized);
 
           if (!match) {
             showError('ID no encontrado.', idInput);
