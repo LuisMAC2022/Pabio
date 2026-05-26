@@ -60,3 +60,33 @@ pyt
 * Sin librerías externas.
 * JS pequeño y diferido/al final del `body`.
 * DOM simple (sin wrappers innecesarios).
+
+Navegacion y accesibilidad:
+
+1. Añadir “skip link” al inicio de cada página apuntando al `main`.
+
+2. Garantizar jerarquía correcta:
+
+* Un único `h1` por página.
+* Un único `main`.
+
+3. En formulario:
+
+* `label` visible y asociado por `for/id`.
+* Mensajes de ayuda/error enlazados con `aria-describedby`.
+* Estado de foco visible en input y botón.
+
+4. En validaciones:
+
+* Error textual claro, no solo color.
+* `aria-live` para anunciar errores sin recargar.
+
+5. Comprobar navegación por teclado:
+
+* Tab order natural.
+* Sin trampas de foco.
+
+6. Mantener DOM ligero y semántico:
+
+* Evitar `div` innecesarios.
+* Sin ARIA redundante cuando HTML nativo ya cubre el caso.
