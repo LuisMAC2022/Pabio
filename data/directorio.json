@@ -12,6 +12,7 @@
   "campos": [
     "colaborador_id",
     "id_fuente",
+    "apellidos",
     "nombre",
     "linea_trabajo",
     "categoria",
@@ -22,7 +23,8 @@
     {
       "colaborador_id": "IB-PA-00001",
       "id_fuente": 1,
-      "nombre": "Aguilar Ogarrio, Samuel",
+      "apellidos": "Aguilar Ogarrio",
+      "nombre": "Samuel",
       "linea_trabajo": "Micología. Asistencia técnica en la formación electrónica de diccionarios y libros de micología",
       "categoria": "Técnico académico asociado B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=bHV1Q3VFQi8xVlJzRlh1aVhvZXFRQT09",
@@ -31,7 +33,8 @@
     {
       "colaborador_id": "IB-PA-00002",
       "id_fuente": 2,
-      "nombre": "Alcantara Pereira da Silva, Camila",
+      "apellidos": "Alcantara Pereira da Silva",
+      "nombre": "Camila",
       "linea_trabajo": "Taxonomía, sistemática, palinología y anatomía de maderas",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=OTh4eDRtRDhzMDZMWmswVHV4R2UrUT09",
@@ -40,7 +43,8 @@
     {
       "colaborador_id": "IB-PA-00003",
       "id_fuente": 3,
-      "nombre": "Alvarez Manjarrez, Julieta",
+      "apellidos": "Alvarez Manjarrez",
+      "nombre": "Julieta",
       "linea_trabajo": "Ecología y sistemática de hongos tropicales",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=a3pmOTN5NFZWSW1uY0F4TGFxMVRjZz09",
@@ -49,7 +53,8 @@
     {
       "colaborador_id": "IB-PA-00004",
       "id_fuente": 4,
-      "nombre": "Álvarez Noguera, Fernando",
+      "apellidos": "Álvarez Noguera",
+      "nombre": "Fernando",
       "linea_trabajo": "Crustáceos",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=cDVWY24waWk0Y0tzNW15Q3Q5MXUwdz09",
@@ -58,7 +63,8 @@
     {
       "colaborador_id": "IB-PA-00005",
       "id_fuente": 5,
-      "nombre": "Andrade Murguía, María Gloria",
+      "apellidos": "Andrade Murguía",
+      "nombre": "María Gloria",
       "linea_trabajo": "Taxonomía y sistemática filogenética de Leguminosas, colecciones históricas botánicas",
       "categoria": "Técnico académico auxiliar C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=c2prcG5nRVlCbjYxK09pQzdQVnI3Zz09",
@@ -67,7 +73,8 @@
     {
       "colaborador_id": "IB-PA-00006",
       "id_fuente": 6,
-      "nombre": "Arévalo Guzmán, Gerardo",
+      "apellidos": "Arévalo Guzmán",
+      "nombre": "Gerardo",
       "linea_trabajo": "Coordinador de bibliotecas",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=cW50bkp4YVRaODVVb0R3UXF3NS9pUT09",
@@ -76,7 +83,8 @@
     {
       "colaborador_id": "IB-PA-00007",
       "id_fuente": 7,
-      "nombre": "Arias Montes, Angel Salvador",
+      "apellidos": "Arias Montes",
+      "nombre": "Angel Salvador",
       "linea_trabajo": "Sistemática de cactáceas",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=cTVoVUVhbUo5MEU2L1BnNnNjNnVJdz09",
@@ -85,7 +93,8 @@
     {
       "colaborador_id": "IB-PA-00008",
       "id_fuente": 8,
-      "nombre": "Arizmendi Espinosa, María Antonieta",
+      "apellidos": "Arizmendi Espinosa",
+      "nombre": "María Antonieta",
       "linea_trabajo": "Edición técnica",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=WDZBTXlHcGhqL1FnZnB2VXpjWlFTUT09",
@@ -94,7 +103,8 @@
     {
       "colaborador_id": "IB-PA-00009",
       "id_fuente": 9,
-      "nombre": "Armendáriz Toledano, Francisco",
+      "apellidos": "Armendáriz Toledano",
+      "nombre": "Francisco",
       "linea_trabajo": "Sistemática, biología y evolución del fenotipo de escarabajos descortezadores de la subfamilia Scolytinae (Curculionidae) y otros insectos de importancia forestal",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=L29COHNVbmxQcWNuS3JNWGJOWGdoQT09",
@@ -103,7 +113,8 @@
     {
       "colaborador_id": "IB-PA-00010",
       "id_fuente": 10,
-      "nombre": "Arroyave Gutiérrez, Jairo Andrés",
+      "apellidos": "Arroyave Gutiérrez",
+      "nombre": "Jairo Andrés",
       "linea_trabajo": "Diversidad y evolución de peces dulceacuícolas tropicales",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=eEtPT0dSYmdRQldoLy90OG1Nell4dz09",
@@ -112,7 +123,8 @@
     {
       "colaborador_id": "IB-PA-00011",
       "id_fuente": 11,
-      "nombre": "Ayala Barajas, Ricardo",
+      "apellidos": "Ayala Barajas",
+      "nombre": "Ricardo",
       "linea_trabajo": "Sistemática de insectos (Hymenoptera, Apoidea)",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=dmNsbEhubThBaEREZHNJUnpQMnptUT09",
@@ -121,7 +133,8 @@
     {
       "colaborador_id": "IB-PA-00012",
       "id_fuente": 12,
-      "nombre": "Balcázar Sol, Jesús Teodolinda",
+      "apellidos": "Balcázar Sol",
+      "nombre": "Jesús Teodolinda",
       "linea_trabajo": "Etnobotánica (plantas medicinales)",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=WlRFdFJtVldVdEJLK0xtWFFZSENvdz09",
@@ -130,7 +143,8 @@
     {
       "colaborador_id": "IB-PA-00013",
       "id_fuente": 13,
-      "nombre": "Barba Álvarez, Rafael Enrique",
+      "apellidos": "Barba Álvarez",
+      "nombre": "Rafael Enrique",
       "linea_trabajo": "Sistemática de insectos acuáticos (Trichoptera)",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=c3FGYm1TK1ZaQ1crclMwQ1h6ZEhLUT09",
@@ -139,7 +153,8 @@
     {
       "colaborador_id": "IB-PA-00014",
       "id_fuente": 14,
-      "nombre": "Basurto Peña, Francisco Alberto",
+      "apellidos": "Basurto Peña",
+      "nombre": "Francisco Alberto",
       "linea_trabajo": "Etnobotánica",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=SXRibkhXazRtUU92cFdwWkROTGhEdz09",
@@ -148,7 +163,8 @@
     {
       "colaborador_id": "IB-PA-00015",
       "id_fuente": 15,
-      "nombre": "Beltrán Rodríguez, Leonardo Alejandro",
+      "apellidos": "Beltrán Rodríguez",
+      "nombre": "Leonardo Alejandro",
       "linea_trabajo": "Agrobiodiversidad, etnobotánica teórica y cuantitativa, ecología y sostenibilidad de recursos forestales no maderables",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=SVFaVDMvQnM0QnplQlRtaS9xb0s4Zz09",
@@ -157,7 +173,8 @@
     {
       "colaborador_id": "IB-PA-00016",
       "id_fuente": 16,
-      "nombre": "Benítez Villaseñor, Adriana",
+      "apellidos": "Benítez Villaseñor",
+      "nombre": "Adriana",
       "linea_trabajo": "Macroevolución, filogenómica, diversificación asociada a caracteres",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=NUROTVRUbVU4WUFYek5sKzhESGdqZz09",
@@ -166,7 +183,8 @@
     {
       "colaborador_id": "IB-PA-00017",
       "id_fuente": 17,
-      "nombre": "Bernal Ramírez, Celina del Carmen",
+      "apellidos": "Bernal Ramírez",
+      "nombre": "Celina del Carmen",
       "linea_trabajo": "Ingeniería de software, Bases de datos",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=ZmNaQm1ES2tkdndTRVAyWkhlVEpLUT09",
@@ -175,7 +193,8 @@
     {
       "colaborador_id": "IB-PA-00018",
       "id_fuente": 18,
-      "nombre": "Botello López, Francisco Javier",
+      "apellidos": "Botello López",
+      "nombre": "Francisco Javier",
       "linea_trabajo": "Planeación sistemática de la conservación, prospección y manejo de recursos",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=MkJ2d1pONy9CcjhDeGNKTVM2ZmM4UT09",
@@ -184,7 +203,8 @@
     {
       "colaborador_id": "IB-PA-00019",
       "id_fuente": 19,
-      "nombre": "Brailovsky Alperowitz, Harry Urad",
+      "apellidos": "Brailovsky Alperowitz",
+      "nombre": "Harry Urad",
       "linea_trabajo": "Sistemática de insectos (Hemiptera - Coreidae)",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=OWNFZ3h1VTZ6WUNOSjI2ejE3ZFFXQT09",
@@ -193,7 +213,8 @@
     {
       "colaborador_id": "IB-PA-00020",
       "id_fuente": 20,
-      "nombre": "Brunner Caligaris, Ingrid",
+      "apellidos": "Brunner Caligaris",
+      "nombre": "Ingrid",
       "linea_trabajo": "Citología y citogenética",
       "categoria": "Técnico académico asociado A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=OVVYY3VyVWpWWjZ2RU1IZk1aTU5YZz09",
@@ -202,7 +223,8 @@
     {
       "colaborador_id": "IB-PA-00021",
       "id_fuente": 21,
-      "nombre": "Bye Boettler, Robert",
+      "apellidos": "Bye Boettler",
+      "nombre": "Robert",
       "linea_trabajo": "Etnobotánica, Manejo de ecosistemas y conservación",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=QzFad2NhSEQ4cVk0eElTVkpRTk1TQT09",
@@ -211,7 +233,8 @@
     {
       "colaborador_id": "IB-PA-00022",
       "id_fuente": 22,
-      "nombre": "Cabrera Martínez, Lidia Irene",
+      "apellidos": "Cabrera Martínez",
+      "nombre": "Lidia Irene",
       "linea_trabajo": "Sistemática molecular y taxonomía de plantas con flor (familia Araceae) y códigos de barras genéticos de plantas vasculares",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=QkpoV0gzSjZwdEJrcXFCcXBvVEFOdz09",
@@ -220,7 +243,8 @@
     {
       "colaborador_id": "IB-PA-00023",
       "id_fuente": 23,
-      "nombre": "Cacho González, Natalia Ivalú",
+      "apellidos": "Cacho González",
+      "nombre": "Natalia Ivalú",
       "linea_trabajo": "Ecología evolutiva y sistemática de plantas",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Zkd3Rk42akh6My9sQjhUdkZSVHNMdz09",
@@ -229,7 +253,8 @@
     {
       "colaborador_id": "IB-PA-00024",
       "id_fuente": 24,
-      "nombre": "Calvillo Canadell, Laura",
+      "apellidos": "Calvillo Canadell",
+      "nombre": "Laura",
       "linea_trabajo": "Paleobotánica, sistemática y arquitectura foliar",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=YkJCRmszUVk0MDJ0VktWbCthRk5WZz09",
@@ -238,7 +263,8 @@
     {
       "colaborador_id": "IB-PA-00025",
       "id_fuente": 25,
-      "nombre": "Campos Villanueva, Delfino Álvaro",
+      "apellidos": "Campos Villanueva",
+      "nombre": "Delfino Álvaro",
       "linea_trabajo": "Taxonomía vegetal",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Y1lqVDUrdDNTeDVJQ3E4SEFvQTMxdz09",
@@ -247,7 +273,8 @@
     {
       "colaborador_id": "IB-PA-00026",
       "id_fuente": 26,
-      "nombre": "Carvajal Moreno, Magda",
+      "apellidos": "Carvajal Moreno",
+      "nombre": "Magda",
       "linea_trabajo": "Micología",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=cVN2SlRnd1U2ZDlLQkNGaUtkOGRyZz09",
@@ -256,7 +283,8 @@
     {
       "colaborador_id": "IB-PA-00027",
       "id_fuente": 27,
-      "nombre": "Cervantes Reza, Fernando Alfredo",
+      "apellidos": "Cervantes Reza",
+      "nombre": "Fernando Alfredo",
       "linea_trabajo": "Taxonomía, distribución, sistemática y genética",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=d1JMTm5pNkFyQktxNHo4Rkd1dVFLQT09",
@@ -265,7 +293,8 @@
     {
       "colaborador_id": "IB-PA-00028",
       "id_fuente": 28,
-      "nombre": "Cervantes Salcedo, Rafael Cristian",
+      "apellidos": "Cervantes Salcedo",
+      "nombre": "Rafael Cristian",
       "linea_trabajo": "Bioinformática",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Yi9BdHNya3JpSkFJNDh4dlh1b3kydz09",
@@ -274,7 +303,8 @@
     {
       "colaborador_id": "IB-PA-00029",
       "id_fuente": 29,
-      "nombre": "Chávez Ávila, Víctor Manuel",
+      "apellidos": "Chávez Ávila",
+      "nombre": "Víctor Manuel",
       "linea_trabajo": "Cultivo de tejidos vegetales",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=MGpjQThLUUJHM3EyMy9ROWFmVERaZz09",
@@ -283,7 +313,8 @@
     {
       "colaborador_id": "IB-PA-00030",
       "id_fuente": 30,
-      "nombre": "Chávez Castañeda, Noemí",
+      "apellidos": "Chávez Castañeda",
+      "nombre": "Noemí",
       "linea_trabajo": "Taxonomía y sistemática de aves",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Rjl4cDY5dkN6TVlORnVzeXBFV0ozZz09",
@@ -292,7 +323,8 @@
     {
       "colaborador_id": "IB-PA-00031",
       "id_fuente": 31,
-      "nombre": "Coates, Rosamond Ione",
+      "apellidos": "Coates",
+      "nombre": "Rosamond Ione",
       "linea_trabajo": "Ecología de la conservación. Aves.",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=VHdOUmhwd2JWZlBkUzNyVndwcThBdz09",
@@ -301,7 +333,8 @@
     {
       "colaborador_id": "IB-PA-00032",
       "id_fuente": 32,
-      "nombre": "Contreras Ramos, Atilano",
+      "apellidos": "Contreras Ramos",
+      "nombre": "Atilano",
       "linea_trabajo": "Sistemática de insectos acuáticos (Neuropterida)",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=bzREZS9SYTRMTHRQN0wxV241cGpwUT09",
@@ -310,7 +343,8 @@
     {
       "colaborador_id": "IB-PA-00033",
       "id_fuente": 33,
-      "nombre": "Cortés Flores, Jorge",
+      "apellidos": "Cortés Flores",
+      "nombre": "Jorge",
       "linea_trabajo": "Restauración ecológica de comunidades vegetales",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=WVFnNUVhNmk2UVZLUzNtOW91bkdJZz09",
@@ -319,7 +353,8 @@
     {
       "colaborador_id": "IB-PA-00034",
       "id_fuente": 34,
-      "nombre": "Cristians Niizawa, Sol",
+      "apellidos": "Cristians Niizawa",
+      "nombre": "Sol",
       "linea_trabajo": "Etnobotánica. Control de calidad de plantas medicinales",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=U1FlaXlPajE2MXdBUlhPY0k3UGNNZz09",
@@ -328,7 +363,8 @@
     {
       "colaborador_id": "IB-PA-00035",
       "id_fuente": 35,
-      "nombre": "Delgadillo Moya, Claudio",
+      "apellidos": "Delgadillo Moya",
+      "nombre": "Claudio",
       "linea_trabajo": "Briofitas",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=MTJyV3c3Rlc0Ni85dzdidkFaRmJXUT09",
@@ -337,7 +373,8 @@
     {
       "colaborador_id": "IB-PA-00036",
       "id_fuente": 36,
-      "nombre": "Delgado Salinas, Alfonso Octavio",
+      "apellidos": "Delgado Salinas",
+      "nombre": "Alfonso Octavio",
       "linea_trabajo": "Leguminosas",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=SklZS3ZZL1hvZDZIRk5uZjNDdVFrZz09",
@@ -346,7 +383,8 @@
     {
       "colaborador_id": "IB-PA-00037",
       "id_fuente": 37,
-      "nombre": "Don Juan Macías, Bonifacio",
+      "apellidos": "Don Juan Macías",
+      "nombre": "Bonifacio",
       "linea_trabajo": "Fitosanidad",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=SXZqYXp1TWR6R2JuSm1tZjFjVzJ0QT09",
@@ -355,7 +393,8 @@
     {
       "colaborador_id": "IB-PA-00038",
       "id_fuente": 38,
-      "nombre": "Escalante Pliego, Bertha Patricia",
+      "apellidos": "Escalante Pliego",
+      "nombre": "Bertha Patricia",
       "linea_trabajo": "Taxonomía y sistemática de aves",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=bUFIQTllNTZQVFJkMk4vYXYxdW1rQT09",
@@ -364,7 +403,8 @@
     {
       "colaborador_id": "IB-PA-00039",
       "id_fuente": 39,
-      "nombre": "Flores Camargo, Diana Graciela",
+      "apellidos": "Flores Camargo",
+      "nombre": "Diana Graciela",
       "linea_trabajo": "Informática de la Biodiversidad, Colecciones digitales, Etnobotánica",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=NnMzeTZGQ0NzZndJa0RTeE9TeC9tdz09",
@@ -373,7 +413,8 @@
     {
       "colaborador_id": "IB-PA-00040",
       "id_fuente": 40,
-      "nombre": "Flores Martínez, José Juan",
+      "apellidos": "Flores Martínez",
+      "nombre": "José Juan",
       "linea_trabajo": "Mamíferos. Especies exóticas invasoras. Políticas públicas de la conservación.",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=d2RvWkdrSHp2OFJ5U1MwREFzTjBsQT09",
@@ -382,7 +423,8 @@
     {
       "colaborador_id": "IB-PA-00041",
       "id_fuente": 41,
-      "nombre": "Flores Olvera, María Hilda",
+      "apellidos": "Flores Olvera",
+      "nombre": "María Hilda",
       "linea_trabajo": "Amaranthaceae, Chenopodiaceae y Nyctaginaceae",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=SHFkbUk4cThTSFpnanB6bE45c1VYUT09",
@@ -391,7 +433,8 @@
     {
       "colaborador_id": "IB-PA-00042",
       "id_fuente": 42,
-      "nombre": "Flores Villela, Oscar Alberto",
+      "apellidos": "Flores Villela",
+      "nombre": "Oscar Alberto",
       "linea_trabajo": "Sistemática y biogeografía de los anfibios y reptiles de México y Centroamérica",
       "categoria": "Profesor de Carrera Titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=NnQzTWxLUzEyaWdqUHNCUTlTSmJRZz09",
@@ -400,7 +443,8 @@
     {
       "colaborador_id": "IB-PA-00043",
       "id_fuente": 43,
-      "nombre": "García Aguayo, Andrés",
+      "apellidos": "García Aguayo",
+      "nombre": "Andrés",
       "linea_trabajo": "Ecología y conservación de reptiles",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=WWdJOU15OUJ1bDExc3pXQ2RZT0FaQT09",
@@ -409,7 +453,8 @@
     {
       "colaborador_id": "IB-PA-00044",
       "id_fuente": 44,
-      "nombre": "García Burgos, Mario",
+      "apellidos": "García Burgos",
+      "nombre": "Mario",
       "linea_trabajo": "Desarrollo WEB",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=SWswMDc1WXVlUHRwZ2RmSkR3OXFCUT09",
@@ -418,7 +463,8 @@
     {
       "colaborador_id": "IB-PA-00045",
       "id_fuente": 45,
-      "nombre": "García Figueroa Morales, José Javier",
+      "apellidos": "García Figueroa Morales",
+      "nombre": "José Javier",
       "linea_trabajo": "Sistemática de insectos (Psocoptera)",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=QnBOeGlTdlNmTHNQeWZ0RGUyaU9xdz09",
@@ -427,7 +473,8 @@
     {
       "colaborador_id": "IB-PA-00046",
       "id_fuente": 46,
-      "nombre": "García Mendoza, Abisaí Josué",
+      "apellidos": "García Mendoza",
+      "nombre": "Abisaí Josué",
       "linea_trabajo": "Agaváceas",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=V0JrSjlpUVA0cTdQNXZpeDIveEVSUT09",
@@ -436,7 +483,8 @@
     {
       "colaborador_id": "IB-PA-00047",
       "id_fuente": 47,
-      "nombre": "García Peña, María del Rosario",
+      "apellidos": "García Peña",
+      "nombre": "María del Rosario",
       "linea_trabajo": "Lamiaceae",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=R2lUais0MVJWL3E1NjB1U3dGR0MyUT09",
@@ -445,7 +493,8 @@
     {
       "colaborador_id": "IB-PA-00048",
       "id_fuente": 48,
-      "nombre": "García Prieto, Luis",
+      "apellidos": "García Prieto",
+      "nombre": "Luis",
       "linea_trabajo": "Taxonomía de helmintos (Cestodos)",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=YXlaU2hObVJLbnBWVzNJN0lVMEVNQT09",
@@ -454,7 +503,8 @@
     {
       "colaborador_id": "IB-PA-00049",
       "id_fuente": 49,
-      "nombre": "García Varela, José Martín",
+      "apellidos": "García Varela",
+      "nombre": "José Martín",
       "linea_trabajo": "Sistemática molecular de rotíferos y acantocéfalos, y parasitología",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=bWFldlRpQjBXL0FjaloyWGJUdUF3Zz09",
@@ -463,7 +513,8 @@
     {
       "colaborador_id": "IB-PA-00050",
       "id_fuente": 50,
-      "nombre": "Garibay Orijel, Roberto",
+      "apellidos": "Garibay Orijel",
+      "nombre": "Roberto",
       "linea_trabajo": "Sistemática molecular de hongos ectomicorrízicos",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=d09tTkhpWDhBK2lPS25NRFlSSjROQT09",
@@ -472,7 +523,8 @@
     {
       "colaborador_id": "IB-PA-00051",
       "id_fuente": 51,
-      "nombre": "Garzón Orduña, Ivonne Janeth",
+      "apellidos": "Garzón Orduña",
+      "nombre": "Ivonne Janeth",
       "linea_trabajo": "Sistemática filogenética de Lepidoptera",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Tm5BdCtrVlF2RFBQQXVZbk8zM2lKZz09",
@@ -481,7 +533,8 @@
     {
       "colaborador_id": "IB-PA-00052",
       "id_fuente": 52,
-      "nombre": "Gernandt, David Sebastian",
+      "apellidos": "Gernandt",
+      "nombre": "David Sebastian",
       "linea_trabajo": "Sistemática molecular de pinos",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=OFR5Qk5DckZ6cnkwK0lRVlNzcXkzUT09",
@@ -490,7 +543,8 @@
     {
       "colaborador_id": "IB-PA-00053",
       "id_fuente": 53,
-      "nombre": "Godínez Ortega, José Luis",
+      "apellidos": "Godínez Ortega",
+      "nombre": "José Luis",
       "linea_trabajo": "Ficología",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=ZVRySS92aWpuVVBqOGR0RmEzcDlBUT09",
@@ -499,7 +553,8 @@
     {
       "colaborador_id": "IB-PA-00054",
       "id_fuente": 54,
-      "nombre": "Gómez Hinostrosa, Carlos",
+      "apellidos": "Gómez Hinostrosa",
+      "nombre": "Carlos",
       "linea_trabajo": "Sistemática de cactáceas",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=T1ZuUit1b3dYRWd1a2lhWVFnRUJMZz09",
@@ -508,7 +563,8 @@
     {
       "colaborador_id": "IB-PA-00055",
       "id_fuente": 55,
-      "nombre": "Gómez Ibarra, Salma",
+      "apellidos": "Gómez Ibarra",
+      "nombre": "Salma",
       "linea_trabajo": "Educación y divulgación de la ciencia",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=UlRibWhCbVYxdGRiUTNjRU5GWEUvdz09",
@@ -517,7 +573,8 @@
     {
       "colaborador_id": "IB-PA-00056",
       "id_fuente": 56,
-      "nombre": "González Becerril, Axel Alejandro",
+      "apellidos": "González Becerril",
+      "nombre": "Axel Alejandro",
       "linea_trabajo": "Comunicación de la ciencia",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=aThaVngrY1o4WVU1VHpYNGY4TTBNZz09",
@@ -526,7 +583,8 @@
     {
       "colaborador_id": "IB-PA-00057",
       "id_fuente": 57,
-      "nombre": "González Mateos, Sandra Nayeli",
+      "apellidos": "González Mateos",
+      "nombre": "Sandra Nayeli",
       "linea_trabajo": "Propagación de plantas acuáticas y educación ambiental",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=VHhuZzlxc3J2aURjYnB2bS9jSkJ3UT09",
@@ -535,7 +593,8 @@
     {
       "colaborador_id": "IB-PA-00058",
       "id_fuente": 58,
-      "nombre": "González Santillán, Edmundo",
+      "apellidos": "González Santillán",
+      "nombre": "Edmundo",
       "linea_trabajo": "Biología evolutiva, ecología, biogeografía y comportamiento de Arácnidos",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=THNSdys3YlJnc09EMFh6N3dqSjE2Zz09",
@@ -544,7 +603,8 @@
     {
       "colaborador_id": "IB-PA-00059",
       "id_fuente": 59,
-      "nombre": "González Villaseñor, María Del Carmen Auxilio",
+      "apellidos": "González Villaseñor",
+      "nombre": "María Del Carmen Auxilio",
       "linea_trabajo": "Biología de hongos (Phylum Ascomycota) de hábitats marinos y agua dulce",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=VFlOQlJlN1AvUkExOTI0dGlQMzF6QT09",
@@ -553,7 +613,8 @@
     {
       "colaborador_id": "IB-PA-00060",
       "id_fuente": 60,
-      "nombre": "Granados Mendoza, Carolina",
+      "apellidos": "Granados Mendoza",
+      "nombre": "Carolina",
       "linea_trabajo": "Bromeliaceae. Evolución de linajes de reciente diversificación y aplicación de recursos genómicos a la filogenética de plantas",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=ZmZLRTZQNHRXK2tGREFHeXUxODFHdz09",
@@ -562,7 +623,8 @@
     {
       "colaborador_id": "IB-PA-00061",
       "id_fuente": 61,
-      "nombre": "Guerrero Fuentes, Dariana Raquel",
+      "apellidos": "Guerrero Fuentes",
+      "nombre": "Dariana Raquel",
       "linea_trabajo": "Sistemática y taxonomía de arañas",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=N0RlUUlBK1RXSG93TXNMTk9TRkRZdz09",
@@ -571,7 +633,8 @@
     {
       "colaborador_id": "IB-PA-00062",
       "id_fuente": 62,
-      "nombre": "Guevara López, Lázaro",
+      "apellidos": "Guevara López",
+      "nombre": "Lázaro",
       "linea_trabajo": "Mastozoología",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=UTB0dHFEU3BGWTRMY2VqZkw5cHJ4Zz09",
@@ -580,7 +643,8 @@
     {
       "colaborador_id": "IB-PA-00063",
       "id_fuente": 63,
-      "nombre": "Hernández Macías, Héctor Manuel",
+      "apellidos": "Hernández Macías",
+      "nombre": "Héctor Manuel",
       "linea_trabajo": "Leguminosas y cactáceas",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=MTZsWnBBYkxha3lpbEEvNGNLT08wQT09",
@@ -589,7 +653,8 @@
     {
       "colaborador_id": "IB-PA-00064",
       "id_fuente": 64,
-      "nombre": "Hernández Mena, David Iván Guadalupe",
+      "apellidos": "Hernández Mena",
+      "nombre": "David Iván Guadalupe",
       "linea_trabajo": "Sistemática de Helmintos de vertebrados silvestres",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=aE45d0Rnd3lQRytWR0FuWmRmQjQ0QT09",
@@ -598,7 +663,8 @@
     {
       "colaborador_id": "IB-PA-00065",
       "id_fuente": 65,
-      "nombre": "Hernández Navarro, Oscar Eduardo",
+      "apellidos": "Hernández Navarro",
+      "nombre": "Oscar Eduardo",
       "linea_trabajo": "Taxonomía, ecología y sistemática de hongos, con énfasis en zonas áridas y semiáridas",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=dU52MzVEYmtHb2lIdUZ4SFVRQlVBQT09",
@@ -607,7 +673,8 @@
     {
       "colaborador_id": "IB-PA-00066",
       "id_fuente": 66,
-      "nombre": "Hernández Ordóñez, Omar",
+      "apellidos": "Hernández Ordóñez",
+      "nombre": "Omar",
       "linea_trabajo": "Ecología, sistemática y conservación de anfibios y reptiles",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=ZzZraWhWNWhyWk95Q2VvV2VubHhTdz09",
@@ -616,7 +683,8 @@
     {
       "colaborador_id": "IB-PA-00067",
       "id_fuente": 67,
-      "nombre": "Hernández Pulido, Francisco Salvador",
+      "apellidos": "Hernández Pulido",
+      "nombre": "Francisco Salvador",
       "linea_trabajo": "Análisis de parámetros fisicoquímicos en ambientes acuáticos",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=UmcrNHhlSXp2dnRUWmFIUVoyangrUT09",
@@ -625,7 +693,8 @@
     {
       "colaborador_id": "IB-PA-00068",
       "id_fuente": 68,
-      "nombre": "Hernández Zacarías, Carmen Cecilia",
+      "apellidos": "Hernández Zacarías",
+      "nombre": "Carmen Cecilia",
       "linea_trabajo": "Educación ambiental",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=WU5MMjlra2VGVHYxK1h1ZUk4d1ZsUT09",
@@ -634,7 +703,8 @@
     {
       "colaborador_id": "IB-PA-00069",
       "id_fuente": 69,
-      "nombre": "Herrera Campos, María de los Ángeles",
+      "apellidos": "Herrera Campos",
+      "nombre": "María de los Ángeles",
       "linea_trabajo": "Líquenes",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=QTZqTXVyWG4wamxPQkE4SER6NVExQT09",
@@ -643,7 +713,8 @@
     {
       "colaborador_id": "IB-PA-00070",
       "id_fuente": 70,
-      "nombre": "Herrera Montalvo, Luis Gerardo",
+      "apellidos": "Herrera Montalvo",
+      "nombre": "Luis Gerardo",
       "linea_trabajo": "Ecología y biología funcional en murciélagos y aves",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=S1hIUkZMTHZVcmY1ODg0VHlIZ08wUT09",
@@ -652,7 +723,8 @@
     {
       "colaborador_id": "IB-PA-00071",
       "id_fuente": 71,
-      "nombre": "Hinojosa Díaz, Ismael Alejandro",
+      "apellidos": "Hinojosa Díaz",
+      "nombre": "Ismael Alejandro",
       "linea_trabajo": "Sistemática de abejas (Hymenoptera - Apoidea)",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=d1hHTDRkZTZnTjljeFViTlBTamJPdz09",
@@ -661,7 +733,8 @@
     {
       "colaborador_id": "IB-PA-00072",
       "id_fuente": 72,
-      "nombre": "Hortelano Moncada, Yolanda",
+      "apellidos": "Hortelano Moncada",
+      "nombre": "Yolanda",
       "linea_trabajo": "Sistemática de mamíferos",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=RVZhcnpsWm45YXFLMHZDcUxLZnQydz09",
@@ -670,7 +743,8 @@
     {
       "colaborador_id": "IB-PA-00073",
       "id_fuente": 73,
-      "nombre": "Jasso Martínez, Jovana Magdalena",
+      "apellidos": "Jasso Martínez",
+      "nombre": "Jovana Magdalena",
       "linea_trabajo": "Sistemática filogenética de insectos y museómica, con especial énfasis en Orthoptera y otros insectos polineópteros",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=ZDlJS2g1bHo1OEsvQmNnVzlETjRNZz09",
@@ -679,7 +753,8 @@
     {
       "colaborador_id": "IB-PA-00074",
       "id_fuente": 74,
-      "nombre": "Jaume Schinkel, Santiago",
+      "apellidos": "Jaume Schinkel",
+      "nombre": "Santiago",
       "linea_trabajo": "Taxonomía integrativa de dípteros",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=MklQbFlpY0FuSCtqaFJ5YUlSTzI3QT09",
@@ -688,7 +763,8 @@
     {
       "colaborador_id": "IB-PA-00075",
       "id_fuente": 75,
-      "nombre": "Jiménez Marín, Andrea Rubí",
+      "apellidos": "Jiménez Marín",
+      "nombre": "Andrea Rubí",
       "linea_trabajo": "Biología molecular. Secuenciación.",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=elY1USt5RVYvNW9kSjFnSFZlTVlPdz09",
@@ -697,7 +773,8 @@
     {
       "colaborador_id": "IB-PA-00076",
       "id_fuente": 76,
-      "nombre": "Juárez Jaimes, Blanca Verónica",
+      "apellidos": "Juárez Jaimes",
+      "nombre": "Blanca Verónica",
       "linea_trabajo": "Asclepiadaceae. Taxonomía y sistemática filogenética.",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=RjlVeExhVHh4K0ttOGxRUlljN2kwZz09",
@@ -706,7 +783,8 @@
     {
       "colaborador_id": "IB-PA-00077",
       "id_fuente": 77,
-      "nombre": "Lappe Oliveras, Patricia Ester",
+      "apellidos": "Lappe Oliveras",
+      "nombre": "Patricia Ester",
       "linea_trabajo": "Micología (micromicetes). Microbiología de alimentos.",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=eUZMaUFDZzlUVWhnWWdyZWJFR1BoZz09",
@@ -715,7 +793,8 @@
     {
       "colaborador_id": "IB-PA-00078",
       "id_fuente": 78,
-      "nombre": "León Règagnon, Virginia",
+      "apellidos": "León Règagnon",
+      "nombre": "Virginia",
       "linea_trabajo": "Evolución de sistemas parásito-hospedero",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Y2llNitFS3dMR3NOU1UycFVyQ3YyZz09",
@@ -724,7 +803,8 @@
     {
       "colaborador_id": "IB-PA-00079",
       "id_fuente": 79,
-      "nombre": "López Escamilla, Ana Laura",
+      "apellidos": "López Escamilla",
+      "nombre": "Ana Laura",
       "linea_trabajo": "Fisiología vegetal y cultivo de tejidos vegetales",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=d2l2L0JSMm4vNG91UzhESEFqUE9aZz09",
@@ -733,7 +813,8 @@
     {
       "colaborador_id": "IB-PA-00080",
       "id_fuente": 80,
-      "nombre": "López Estrada, Estefany Karen",
+      "apellidos": "López Estrada",
+      "nombre": "Estefany Karen",
       "linea_trabajo": "Macroevolución, microevolución, biogeografía histórica y evolución morfológica",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=RkZPbzhBVzNBUjRkRUVmU0J1N3l0Zz09",
@@ -742,7 +823,8 @@
     {
       "colaborador_id": "IB-PA-00081",
       "id_fuente": 81,
-      "nombre": "López Ibarra, Jorge Gerardo",
+      "apellidos": "López Ibarra",
+      "nombre": "Jorge Gerardo",
       "linea_trabajo": "Soporte técnico, Redes",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=dHBwSURFZEZkMFRZcXJIVDlHNHdpZz09",
@@ -751,7 +833,8 @@
     {
       "colaborador_id": "IB-PA-00082",
       "id_fuente": 82,
-      "nombre": "López Ortiz, Nelly María",
+      "apellidos": "López Ortiz",
+      "nombre": "Nelly María",
       "linea_trabajo": "Biología molecular",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=bC9kN2hwS3E4aXFCOUozMm1aTUU4UT09",
@@ -760,7 +843,8 @@
     {
       "colaborador_id": "IB-PA-00083",
       "id_fuente": 83,
-      "nombre": "Madora Astudillo, Martha",
+      "apellidos": "Madora Astudillo",
+      "nombre": "Martha",
       "linea_trabajo": "Taxonomía y sistemática de insectos",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=MEFDTUVCaXpvZnlkZU1sTlR2ZVJ2Zz09",
@@ -769,7 +853,8 @@
     {
       "colaborador_id": "IB-PA-00084",
       "id_fuente": 84,
-      "nombre": "Magallón Puebla, Susana Aurora",
+      "apellidos": "Magallón Puebla",
+      "nombre": "Susana Aurora",
       "linea_trabajo": "Evolución en plantas con semillas",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=cTdxMHhsZUYxR2RKYW42SkQ5OVMwQT09",
@@ -778,7 +863,8 @@
     {
       "colaborador_id": "IB-PA-00085",
       "id_fuente": 85,
-      "nombre": "Magaña Rueda, Patricia",
+      "apellidos": "Magaña Rueda",
+      "nombre": "Patricia",
       "linea_trabajo": "Comunicación Pública de la Ciencia (Divulgación científica)",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=aXd2dVQxOXN5N2tqTGlPd0JhMUtKdz09",
@@ -787,7 +873,8 @@
     {
       "colaborador_id": "IB-PA-00086",
       "id_fuente": 86,
-      "nombre": "Márquez Valdelamar, Laura Margarita",
+      "apellidos": "Márquez Valdelamar",
+      "nombre": "Laura Margarita",
       "linea_trabajo": "Biología molecular en aves",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=ajIzQjIxbWxGeXZaMGQwNmd0Zy9LUT09",
@@ -796,7 +883,8 @@
     {
       "colaborador_id": "IB-PA-00087",
       "id_fuente": 87,
-      "nombre": "Martínez Ballesté, Andrea",
+      "apellidos": "Martínez Ballesté",
+      "nombre": "Andrea",
       "linea_trabajo": "Etnobotánica. Ecología de la conservación",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=VVdBT2dnS1FteWRYeEN0Tmg3MDNKUT09",
@@ -805,7 +893,8 @@
     {
       "colaborador_id": "IB-PA-00088",
       "id_fuente": 88,
-      "nombre": "Martínez Meyer, Enrique",
+      "apellidos": "Martínez Meyer",
+      "nombre": "Enrique",
       "linea_trabajo": "Biogeografía y ecología de la conservación",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=WDBxRiszZmJEUGFGYzF2c1JtMklYUT09",
@@ -814,7 +903,8 @@
     {
       "colaborador_id": "IB-PA-00089",
       "id_fuente": 89,
-      "nombre": "Martínez Rendón, Alma Yadira",
+      "apellidos": "Martínez Rendón",
+      "nombre": "Alma Yadira",
       "linea_trabajo": "Fisiología vegetal y Cultivo de Tejidos Vegetales",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=cE5lZjZIeUFzUFJIZFFPU05DUExSQT09",
@@ -823,7 +913,8 @@
     {
       "colaborador_id": "IB-PA-00090",
       "id_fuente": 90,
-      "nombre": "Martínez Salas, Esteban Manuel",
+      "apellidos": "Martínez Salas",
+      "nombre": "Esteban Manuel",
       "linea_trabajo": "Plantas vasculares",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=b0dpelNDUWRXQ0dkWVM2cEw0QXFKUT09",
@@ -832,7 +923,8 @@
     {
       "colaborador_id": "IB-PA-00091",
       "id_fuente": 91,
-      "nombre": "Mayorga Martínez, María Cristina",
+      "apellidos": "Mayorga Martínez",
+      "nombre": "María Cristina",
       "linea_trabajo": "Sistemática de insectos (Hemiptera y Cydnidae)",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=ZnBoVHhzSWdCZlduY2t1Nm5QODcxdz09",
@@ -841,7 +933,8 @@
     {
       "colaborador_id": "IB-PA-00092",
       "id_fuente": 92,
-      "nombre": "Medina Lemos, Rosalinda",
+      "apellidos": "Medina Lemos",
+      "nombre": "Rosalinda",
       "linea_trabajo": "Flora del Valle de Tehuacán-Cuicatlán",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=VFMzQmlqS1Y1SEVjeUhyZXg5UmFzZz09",
@@ -850,7 +943,8 @@
     {
       "colaborador_id": "IB-PA-00093",
       "id_fuente": 93,
-      "nombre": "Mena González, Horacio",
+      "apellidos": "Mena González",
+      "nombre": "Horacio",
       "linea_trabajo": "Manejo integral de poblaciones animales, medicina veterinaria aplicada a la conservación del axolote de Xochimilco y otros anfibios",
       "categoria": "Técnico académico asociado B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=alYvTjNuUGswY0tGa1JSMjNRRjZOZz09",
@@ -859,7 +953,8 @@
     {
       "colaborador_id": "IB-PA-00094",
       "id_fuente": 94,
-      "nombre": "Méndez de la Cruz, Fausto Roberto",
+      "apellidos": "Méndez de la Cruz",
+      "nombre": "Fausto Roberto",
       "linea_trabajo": "Sistemática y ecofisiología de anfibios y reptiles",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Qkp5NjdtQU5ZMTN4eGwvdE8zY28wUT09",
@@ -868,7 +963,8 @@
     {
       "colaborador_id": "IB-PA-00095",
       "id_fuente": 95,
-      "nombre": "Mendoza Garfias, María Berenit",
+      "apellidos": "Mendoza Garfias",
+      "nombre": "María Berenit",
       "linea_trabajo": "Microscopía electrónica",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=MWdVZkxYVVdiNHlPSUpmbUZKRndKdz09",
@@ -877,7 +973,8 @@
     {
       "colaborador_id": "IB-PA-00096",
       "id_fuente": 96,
-      "nombre": "Mercado Ruaro, Pedro",
+      "apellidos": "Mercado Ruaro",
+      "nombre": "Pedro",
       "linea_trabajo": "Citología",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=TXRrbmovQVZVdFk0RjFaTUwvamxPdz09",
@@ -886,7 +983,8 @@
     {
       "colaborador_id": "IB-PA-00097",
       "id_fuente": 97,
-      "nombre": "Miranda González, Ricardo",
+      "apellidos": "Miranda González",
+      "nombre": "Ricardo",
       "linea_trabajo": "Ecología y sistemática de líquenes tropicales",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=K0RvU0ZRTFBBYW8xb2RDcU9xR1R5UT09",
@@ -895,7 +993,8 @@
     {
       "colaborador_id": "IB-PA-00098",
       "id_fuente": 98,
-      "nombre": "Montero Rojas, Julio César",
+      "apellidos": "Montero Rojas",
+      "nombre": "Julio César",
       "linea_trabajo": "Diseño gráfico",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=bS9wWklhMDJsUEZuT3pMUXJXOENodz09",
@@ -904,7 +1003,8 @@
     {
       "colaborador_id": "IB-PA-00099",
       "id_fuente": 99,
-      "nombre": "Montiel Parra, Griselda",
+      "apellidos": "Montiel Parra",
+      "nombre": "Griselda",
       "linea_trabajo": "Sistemática de ácaros",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=S2dQYWdBenhZK0VhL0JjNnVIbWRqdz09",
@@ -913,7 +1013,8 @@
     {
       "colaborador_id": "IB-PA-00100",
       "id_fuente": 100,
-      "nombre": "Mora Jarvio, Mauricio Antonio",
+      "apellidos": "Mora Jarvio",
+      "nombre": "Mauricio Antonio",
       "linea_trabajo": "Florística, Taxonomía y Sistemática Fagaceae",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=TVlCU2NVV0tDYVlJMjBLTnRmTFNVZz09",
@@ -922,7 +1023,8 @@
     {
       "colaborador_id": "IB-PA-00101",
       "id_fuente": 101,
-      "nombre": "Moreno Letelier, Alejandra Citlalli",
+      "apellidos": "Moreno Letelier",
+      "nombre": "Alejandra Citlalli",
       "linea_trabajo": "Biología evolutiva. Sistemática de la conservación",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=a2lERHdaSUhIU2dUMW5adi8yemV1dz09",
@@ -931,7 +1033,8 @@
     {
       "colaborador_id": "IB-PA-00102",
       "id_fuente": 102,
-      "nombre": "Morgado Castillo, Mauricio",
+      "apellidos": "Morgado Castillo",
+      "nombre": "Mauricio",
       "linea_trabajo": "Ingeniería y desarrollo de software, administración de redes y servidores, seguridad en informática.",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=a0FDWnY3NUo4YU1XaElSUUVndHNGdz09",
@@ -940,7 +1043,8 @@
     {
       "colaborador_id": "IB-PA-00103",
       "id_fuente": 103,
-      "nombre": "Murguía Romero, Miguel",
+      "apellidos": "Murguía Romero",
+      "nombre": "Miguel",
       "linea_trabajo": "Informática de la Biodiversidad e Informática Biomédica",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=M2xaT1NOYkZBVU5XcXR6ZythSXpFQT09",
@@ -949,7 +1053,8 @@
     {
       "colaborador_id": "IB-PA-00104",
       "id_fuente": 104,
-      "nombre": "Naranjo García, Edna",
+      "apellidos": "Naranjo García",
+      "nombre": "Edna",
       "linea_trabajo": "Sistemática de moluscos",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=VWl1Y0lLbXlhRDNheDVHZmdTdnRwZz09",
@@ -958,7 +1063,8 @@
     {
       "colaborador_id": "IB-PA-00105",
       "id_fuente": 105,
-      "nombre": "Nieto Sotelo, Jorge",
+      "apellidos": "Nieto Sotelo",
+      "nombre": "Jorge",
       "linea_trabajo": "Biología molecular y genética de plantas",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=ZkZkaktiSWdTcjdhUHpqN3FKV1lkdz09",
@@ -967,7 +1073,8 @@
     {
       "colaborador_id": "IB-PA-00106",
       "id_fuente": 106,
-      "nombre": "Nivón Ramírez, Luisa Fernanda",
+      "apellidos": "Nivón Ramírez",
+      "nombre": "Luisa Fernanda",
       "linea_trabajo": "Comunicación educativa",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=RktCNUVsbmduUlE0ZnpFdmlvS2grdz09",
@@ -976,7 +1083,8 @@
     {
       "colaborador_id": "IB-PA-00107",
       "id_fuente": 107,
-      "nombre": "Noguera Martínez, Felipe Arturo",
+      "apellidos": "Noguera Martínez",
+      "nombre": "Felipe Arturo",
       "linea_trabajo": "Sistemática de insectos (Coleoptera, Cerambycidae)",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=WUVrdUhZWEZwendhWWRVVzF6TVVqZz09",
@@ -985,7 +1093,8 @@
     {
       "colaborador_id": "IB-PA-00108",
       "id_fuente": 108,
-      "nombre": "Oceguera Figueroa, Alejandro Francisco",
+      "apellidos": "Oceguera Figueroa",
+      "nombre": "Alejandro Francisco",
       "linea_trabajo": "Sistemática de helmintos (Hirudinea)",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=ZGE1RlA5NThobUM4bWlRTExWenRLdz09",
@@ -994,7 +1103,8 @@
     {
       "colaborador_id": "IB-PA-00109",
       "id_fuente": 109,
-      "nombre": "Ochoterena Booth, Helga",
+      "apellidos": "Ochoterena Booth",
+      "nombre": "Helga",
       "linea_trabajo": "Sistemática de Rubiaceae",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=T05wUjR6WjJESjhhMm1VMENvQnAzZz09",
@@ -1003,7 +1113,8 @@
     {
       "colaborador_id": "IB-PA-00110",
       "id_fuente": 110,
-      "nombre": "Olalde Omaña, Ivonne Guadalupe",
+      "apellidos": "Olalde Omaña",
+      "nombre": "Ivonne Guadalupe",
       "linea_trabajo": "Biología de árboles",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=TVhtOFhrbjhVQ01ZNFpUL3pqRklwZz09",
@@ -1012,7 +1123,8 @@
     {
       "colaborador_id": "IB-PA-00111",
       "id_fuente": 111,
-      "nombre": "Olalde Parra, Gabriel",
+      "apellidos": "Olalde Parra",
+      "nombre": "Gabriel",
       "linea_trabajo": "Sistemática de cactáceas",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=THFqNUJqek5XNjluV25wNXE1ZjRldz09",
@@ -1021,7 +1133,8 @@
     {
       "colaborador_id": "IB-PA-00112",
       "id_fuente": 112,
-      "nombre": "Olson, Mark Earl",
+      "apellidos": "Olson",
+      "nombre": "Mark Earl",
       "linea_trabajo": "Morfología y biología evolutiva de plantas",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=akk3a29sYmxic0thL0lldUlpaERXQT09",
@@ -1030,7 +1143,8 @@
     {
       "colaborador_id": "IB-PA-00113",
       "id_fuente": 113,
-      "nombre": "Olvera García, Martha Virginia",
+      "apellidos": "Olvera García",
+      "nombre": "Martha Virginia",
       "linea_trabajo": "Plantas acuáticas, utricularia",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=U2VUYnN5bDZ5U1NJZGZwbE9XRkUyZz09",
@@ -1039,7 +1153,8 @@
     {
       "colaborador_id": "IB-PA-00114",
       "id_fuente": 114,
-      "nombre": "Ornelas García, Claudia Patricia",
+      "apellidos": "Ornelas García",
+      "nombre": "Claudia Patricia",
       "linea_trabajo": "Sistemática molecular y genética de poblaciones en peces de agua dulce",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=dnR1aklWUU1uMVRIUlFPY0s0dVpJQT09",
@@ -1048,7 +1163,8 @@
     {
       "colaborador_id": "IB-PA-00115",
       "id_fuente": 115,
-      "nombre": "Ortega Huerta, Miguel Alfonso",
+      "apellidos": "Ortega Huerta",
+      "nombre": "Miguel Alfonso",
       "linea_trabajo": "Biogeografía y ciencia de información geográfica",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=YjdlRTFuVlE2MWQzRmpKaGlPNURsdz09",
@@ -1057,7 +1173,8 @@
     {
       "colaborador_id": "IB-PA-00116",
       "id_fuente": 116,
-      "nombre": "Ortega Leite, Georgina",
+      "apellidos": "Ortega Leite",
+      "nombre": "Georgina",
       "linea_trabajo": "Servicios especializados de información en biblioteca",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=c2twZzVDbVQvRm1tRE84OU11MDhwQT09",
@@ -1066,7 +1183,8 @@
     {
       "colaborador_id": "IB-PA-00117",
       "id_fuente": 117,
-      "nombre": "Ortiz Bermúdez, Enrique",
+      "apellidos": "Ortiz Bermúdez",
+      "nombre": "Enrique",
       "linea_trabajo": "Manejo de sistemas de información geográfica y percepción remota",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=WFI3S0Z2cnpRa2NIWDJoRjF2M2V0dz09",
@@ -1075,7 +1193,8 @@
     {
       "colaborador_id": "IB-PA-00118",
       "id_fuente": 118,
-      "nombre": "Ortiz Calderón, Gilda",
+      "apellidos": "Ortiz Calderón",
+      "nombre": "Gilda",
       "linea_trabajo": "Plantas vasculares",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Qkozb0IzclF0QlhibHZZUTFXa1hUQT09",
@@ -1084,7 +1203,8 @@
     {
       "colaborador_id": "IB-PA-00119",
       "id_fuente": 119,
-      "nombre": "Ortiz Rodríguez, Andrés Ernesto",
+      "apellidos": "Ortiz Rodríguez",
+      "nombre": "Andrés Ernesto",
       "linea_trabajo": "Taxonomía y Sistemática Filogenética, Filogeografía y Evolución de especies de bosques tropicales",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=UG5SaUFlVmJBZzNxclZIUXBsQVE4dz09",
@@ -1093,7 +1213,8 @@
     {
       "colaborador_id": "IB-PA-00120",
       "id_fuente": 120,
-      "nombre": "Pace, Marcelo Rodrigo",
+      "apellidos": "Pace",
+      "nombre": "Marcelo Rodrigo",
       "linea_trabajo": "Evolución anatómica, anatomía de maderas y cortezas",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=aUtUL1h4NVJRaXNVdk9ObTVtTDZGZz09",
@@ -1102,7 +1223,8 @@
     {
       "colaborador_id": "IB-PA-00121",
       "id_fuente": 121,
-      "nombre": "Pacheco Flores, Alana",
+      "apellidos": "Pacheco Flores",
+      "nombre": "Alana",
       "linea_trabajo": "Etnobotánica",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Qk05M1RHOHQ4VFJzcWs2c3JZTmJMZz09",
@@ -1111,7 +1233,8 @@
     {
       "colaborador_id": "IB-PA-00122",
       "id_fuente": 122,
-      "nombre": "Paredes León, Ricardo",
+      "apellidos": "Paredes León",
+      "nombre": "Ricardo",
       "linea_trabajo": "Sistemática de ácaros asociados a vertebrados terrestres",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=SHNtWVB4NHZ1RWVpUVZOWjlORFpNUT09",
@@ -1120,7 +1243,8 @@
     {
       "colaborador_id": "IB-PA-00123",
       "id_fuente": 123,
-      "nombre": "Parra Olea, Gabriela",
+      "apellidos": "Parra Olea",
+      "nombre": "Gabriela",
       "linea_trabajo": "Sistemática molecular y conservación de anfibios",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=NHRWMmFZa0FDR3V2WFkzRzRrRzF4QT09",
@@ -1129,7 +1253,8 @@
     {
       "colaborador_id": "IB-PA-00124",
       "id_fuente": 124,
-      "nombre": "Peña Retes, Ana Paola",
+      "apellidos": "Peña Retes",
+      "nombre": "Ana Paola",
       "linea_trabajo": "Reproducción en musgos, briofitas",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=TlVlcGZjeEh3WVV6V05OeXlhaTJqdz09",
@@ -1138,7 +1263,8 @@
     {
       "colaborador_id": "IB-PA-00125",
       "id_fuente": 125,
-      "nombre": "Pérez Ortiz, Tila María",
+      "apellidos": "Pérez Ortiz",
+      "nombre": "Tila María",
       "linea_trabajo": "Sistemática de ácaros",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=dC9aWStDc1ZmT1FKYjdhZnAxUGNVUT09",
@@ -1147,7 +1273,8 @@
     {
       "colaborador_id": "IB-PA-00126",
       "id_fuente": 126,
-      "nombre": "Pinedo Escatel, Jorge Adilson",
+      "apellidos": "Pinedo Escatel",
+      "nombre": "Jorge Adilson",
       "linea_trabajo": "Sistemática y evolución del suborden Auchenorrhyncha (Insecta: Hemiptera), con énfasis sobre la familia Cicadellidae",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Q2ZZQmtXZVYyaDV6d3BmdGVUOW9iZz09",
@@ -1156,7 +1283,8 @@
     {
       "colaborador_id": "IB-PA-00127",
       "id_fuente": 127,
-      "nombre": "Ramírez Barahona, Santiago Alejandro",
+      "apellidos": "Ramírez Barahona",
+      "nombre": "Santiago Alejandro",
       "linea_trabajo": "Sistemática molecular de helechos",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Z2tLdmRwZ0M3djVlajloWHZlaEpHZz09",
@@ -1165,7 +1293,8 @@
     {
       "colaborador_id": "IB-PA-00128",
       "id_fuente": 128,
-      "nombre": "Ramírez García, Enrique",
+      "apellidos": "Ramírez García",
+      "nombre": "Enrique",
       "linea_trabajo": "Sistemática de insectos (Diptera)",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=azJaQWNtUWJ4UmRqc1BwM0NtOS8vQT09",
@@ -1174,7 +1303,8 @@
     {
       "colaborador_id": "IB-PA-00129",
       "id_fuente": 129,
-      "nombre": "Ramírez Roa, María Angélica de la Paz",
+      "apellidos": "Ramírez Roa",
+      "nombre": "María Angélica de la Paz",
       "linea_trabajo": "Sistemática de Gesneriaceae",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=eS9FWWlwZnpCaUFzamlPeDR3c3RwZz09",
@@ -1183,7 +1313,8 @@
     {
       "colaborador_id": "IB-PA-00130",
       "id_fuente": 130,
-      "nombre": "Renton, Katherine",
+      "apellidos": "Renton",
+      "nombre": "Katherine",
       "linea_trabajo": "Ecología poblacional y reproductiva de aves",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=K0JWVGtBRnFPK3NzQkgxK0lWYTQzZz09",
@@ -1192,7 +1323,8 @@
     {
       "colaborador_id": "IB-PA-00131",
       "id_fuente": 131,
-      "nombre": "Reyes Santiago, Panuncio Jerónimo",
+      "apellidos": "Reyes Santiago",
+      "nombre": "Panuncio Jerónimo",
       "linea_trabajo": "Sistemática de cactáceas y crasuláceas",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=eG8rajA0cWVzd2hCNkMwYlEzTW40UT09",
@@ -1201,7 +1333,8 @@
     {
       "colaborador_id": "IB-PA-00132",
       "id_fuente": 132,
-      "nombre": "Reynoso Rosales, Víctor Hugo",
+      "apellidos": "Reynoso Rosales",
+      "nombre": "Víctor Hugo",
       "linea_trabajo": "Sistemática y paleontología de anfibios y reptiles",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=R254a2psSURxOTgwVGhKQkNsNW1VUT09",
@@ -1210,7 +1343,8 @@
     {
       "colaborador_id": "IB-PA-00133",
       "id_fuente": 133,
-      "nombre": "Ricker, Martin",
+      "apellidos": "Ricker",
+      "nombre": "Martin",
       "linea_trabajo": "Ciencias forestales, análisis de diversidad arbórea, y modelaje estadístico y económico",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=bzEvRFdCeUh4WFdpcGpvbGN4S1lHQT09",
@@ -1219,7 +1353,8 @@
     {
       "colaborador_id": "IB-PA-00134",
       "id_fuente": 134,
-      "nombre": "Rivera Cruz, Yazmín",
+      "apellidos": "Rivera Cruz",
+      "nombre": "Yazmín",
       "linea_trabajo": "Procesos técnicos y desarrollo de colecciones en biblioteca",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=OC84YmwySzFGRXhsay9wckl5MTJIUT09",
@@ -1228,7 +1363,8 @@
     {
       "colaborador_id": "IB-PA-00135",
       "id_fuente": 135,
-      "nombre": "Rosas López, Ulises Yunuén",
+      "apellidos": "Rosas López",
+      "nombre": "Ulises Yunuén",
       "linea_trabajo": "Biología evolutiva del desarrollo, con énfasis en la diversidad de la arquitectura en raíces",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=UmRsNnd2eFFzUlBpYVBzUDFkcWVHZz09",
@@ -1237,7 +1373,8 @@
     {
       "colaborador_id": "IB-PA-00136",
       "id_fuente": 136,
-      "nombre": "Salazar Chávez, Gerardo Adolfo",
+      "apellidos": "Salazar Chávez",
+      "nombre": "Gerardo Adolfo",
       "linea_trabajo": "Sistemática de orquídeas",
       "categoria": "Investigador titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=QTNKVGh5V3VFMjNQbEFSczlubmExUT09",
@@ -1246,7 +1383,8 @@
     {
       "colaborador_id": "IB-PA-00137",
       "id_fuente": 137,
-      "nombre": "Saldívar Sandoval, Jorge Aurelio",
+      "apellidos": "Saldívar Sandoval",
+      "nombre": "Jorge Aurelio",
       "linea_trabajo": "Cómputo",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=YjRyOHl3c0JxSG10L3lrbnRIM3kvQT09",
@@ -1255,7 +1393,8 @@
     {
       "colaborador_id": "IB-PA-00138",
       "id_fuente": 138,
-      "nombre": "Salgado Maldonado, Guillermo",
+      "apellidos": "Salgado Maldonado",
+      "nombre": "Guillermo",
       "linea_trabajo": "Sistemática de helmintos de peces de agua dulce (Acantocéfalos)",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=SmRDWXdGQ3dGVmsyQVZSZUVjUk9IUT09",
@@ -1264,7 +1403,8 @@
     {
       "colaborador_id": "IB-PA-00139",
       "id_fuente": 139,
-      "nombre": "Sánchez Carbajal, Daniel",
+      "apellidos": "Sánchez Carbajal",
+      "nombre": "Daniel",
       "linea_trabajo": "Sistemática de angiospermas con énfasis en Cactaceae",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Lzh2Q3YzbGdlNzE0U2puOHh4eGFiUT09",
@@ -1273,7 +1413,8 @@
     {
       "colaborador_id": "IB-PA-00140",
       "id_fuente": 140,
-      "nombre": "Sánchez Cordero Dávila, Víctor Manuel Guillermo",
+      "apellidos": "Sánchez Cordero Dávila",
+      "nombre": "Víctor Manuel Guillermo",
       "linea_trabajo": "Mamíferos, zoonosis",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Z004aTRuRk9uRnFCK3Nra2c2Y2R4QT09",
@@ -1282,7 +1423,8 @@
     {
       "colaborador_id": "IB-PA-00141",
       "id_fuente": 141,
-      "nombre": "Sandoval Zapotitla, Estela",
+      "apellidos": "Sandoval Zapotitla",
+      "nombre": "Estela",
       "linea_trabajo": "Anatomía vegetal, descriptiva y sistemática",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=azNOamtuNFREY29DRW9aUkNUV3lJdz09",
@@ -1291,7 +1433,8 @@
     {
       "colaborador_id": "IB-PA-00142",
       "id_fuente": 142,
-      "nombre": "Segovia Rivas, Alí Citlalli",
+      "apellidos": "Segovia Rivas",
+      "nombre": "Alí Citlalli",
       "linea_trabajo": "Anatomía cuantitativa y estructura de maderas. Dendroecología. Anatomía y morfología de maderas",
       "categoria": "Técnico académico asociado B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=V1luOGpFa3FGRzZrZnk1a2c0MHJCUT09",
@@ -1300,7 +1443,8 @@
     {
       "colaborador_id": "IB-PA-00143",
       "id_fuente": 143,
-      "nombre": "Tapia Tinajero, María del Socorro",
+      "apellidos": "Tapia Tinajero",
+      "nombre": "María del Socorro",
       "linea_trabajo": "Acervo Histórico",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=UUYyeHh4Vmh1Q1Rtb29xVjlTNHVuQT09",
@@ -1309,7 +1453,8 @@
     {
       "colaborador_id": "IB-PA-00144",
       "id_fuente": 144,
-      "nombre": "Téllez Velasco, María de los Ángeles Aída",
+      "apellidos": "Téllez Velasco",
+      "nombre": "María de los Ángeles Aída",
       "linea_trabajo": "Sistemática de orquídeas",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=RkNlT2kwcWdGZTFKc1lHQ0k3Mktudz09",
@@ -1318,7 +1463,8 @@
     {
       "colaborador_id": "IB-PA-00145",
       "id_fuente": 145,
-      "nombre": "Terrazas Salgado, Teresa Margarita",
+      "apellidos": "Terrazas Salgado",
+      "nombre": "Teresa Margarita",
       "linea_trabajo": "Morfología y sistemática de cactáceas y anacardiáceas",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=MkV2OGozSDJ6SUQ0eWNlT2RhVXE0UT09",
@@ -1327,7 +1473,8 @@
     {
       "colaborador_id": "IB-PA-00146",
       "id_fuente": 146,
-      "nombre": "Torres Colín, María Leticia",
+      "apellidos": "Torres Colín",
+      "nombre": "María Leticia",
       "linea_trabajo": "Leguminosas",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=VDl4SGE1VmhwM2lvMEt5aE9yMzNsQT09",
@@ -1336,7 +1483,8 @@
     {
       "colaborador_id": "IB-PA-00147",
       "id_fuente": 147,
-      "nombre": "Torres Colín, Rafael",
+      "apellidos": "Torres Colín",
+      "nombre": "Rafael",
       "linea_trabajo": "Leguminosas, Florística del estado de Oaxaca",
       "categoria": "Técnico académico titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Z0RtSmNBSmF2b3VtaGs2RDJaOWNkZz09",
@@ -1345,7 +1493,8 @@
     {
       "colaborador_id": "IB-PA-00148",
       "id_fuente": 148,
-      "nombre": "Torres Hernández, Eloísa",
+      "apellidos": "Torres Hernández",
+      "nombre": "Eloísa",
       "linea_trabajo": "Taxonomía, sistemática y genética de peces marinos",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=QUhlb25tcWZwaUphaCtWQ1ZaRnNsZz09",
@@ -1354,7 +1503,8 @@
     {
       "colaborador_id": "IB-PA-00149",
       "id_fuente": 149,
-      "nombre": "Trejo Hernández, Laura",
+      "apellidos": "Trejo Hernández",
+      "nombre": "Laura",
       "linea_trabajo": "Ecología Molecular",
       "categoria": "Catedrático CONACyT",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=ZUNrYkt2OWMrT01MTEhndjJVMlNGQT09",
@@ -1363,7 +1513,8 @@
     {
       "colaborador_id": "IB-PA-00150",
       "id_fuente": 150,
-      "nombre": "Vallejo Ramos, Mariana",
+      "apellidos": "Vallejo Ramos",
+      "nombre": "Mariana",
       "linea_trabajo": "Conservación y manejo de comunidades vegetales",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=a0xUVVNoZ3NDNlBBY3A0RzdxaDJvUT09",
@@ -1372,7 +1523,8 @@
     {
       "colaborador_id": "IB-PA-00151",
       "id_fuente": 151,
-      "nombre": "Vallejo Zamora, Manuel Alejandro",
+      "apellidos": "Vallejo Zamora",
+      "nombre": "Manuel Alejandro",
       "linea_trabajo": "Bases de datos de las colecciones del Jardín Botánico",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=NWY2UUNXSXc1K3pmY2Q5cU5lMUZEZz09",
@@ -1381,7 +1533,8 @@
     {
       "colaborador_id": "IB-PA-00152",
       "id_fuente": 152,
-      "nombre": "Vargas Cuenca, Julieta",
+      "apellidos": "Vargas Cuenca",
+      "nombre": "Julieta",
       "linea_trabajo": "Sistemática de mamíferos",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=d2JHcGlzd2tSVTZ6TlR3NG13UlZKQT09",
@@ -1390,7 +1543,8 @@
     {
       "colaborador_id": "IB-PA-00153",
       "id_fuente": 153,
-      "nombre": "Vázquez Miranda, Hernán",
+      "apellidos": "Vázquez Miranda",
+      "nombre": "Hernán",
       "linea_trabajo": "Ornitología, biología evolutiva y filogenómica",
       "categoria": "Investigador asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=cVJkVHFtMG5kWGJyQ1RJamVKL0FnZz09",
@@ -1399,7 +1553,8 @@
     {
       "colaborador_id": "IB-PA-00154",
       "id_fuente": 154,
-      "nombre": "Vélez Aguilar, Patricia",
+      "apellidos": "Vélez Aguilar",
+      "nombre": "Patricia",
       "linea_trabajo": "Biología evolutiva y genética de la conservación de hongos microscópicos en ambientes amenazados de México",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=UHJYR0ttZFZoRWdsa0dtOU0wTVhZZz09",
@@ -1408,7 +1563,8 @@
     {
       "colaborador_id": "IB-PA-00155",
       "id_fuente": 155,
-      "nombre": "Vergara Silva, Francisco Roberto",
+      "apellidos": "Vergara Silva",
+      "nombre": "Francisco Roberto",
       "linea_trabajo": "Taxonomía, Sistemática y Biología Evolutiva, Historia, Filosofía y Sociología de la Ciencia",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=SzJ2TVFKaTJFTjhSQmNqMUlQdDNodz09",
@@ -1417,7 +1573,8 @@
     {
       "colaborador_id": "IB-PA-00156",
       "id_fuente": 156,
-      "nombre": "Vicente Rivera, Luis Humberto",
+      "apellidos": "Vicente Rivera",
+      "nombre": "Luis Humberto",
       "linea_trabajo": "Taxonomía y sistemática botánica, florística y manejo de colecciones vivas y de herbario, ecología de comunidades y ecosistemas, relaciones animal-planta, biología de la conservación, manejo de recursos naturales y educación ambiental.",
       "categoria": "Técnico académico asociado C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=RkRyWkh2Smd5N1d6Mis3aCt6SFdXUT09",
@@ -1426,7 +1583,8 @@
     {
       "colaborador_id": "IB-PA-00157",
       "id_fuente": 157,
-      "nombre": "Villalobos Hiriart, José Luis",
+      "apellidos": "Villalobos Hiriart",
+      "nombre": "José Luis",
       "linea_trabajo": "Sistemática de crustáceos",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=dWsxRWd4NmVxZm5pVCs5aHV2eGY4QT09",
@@ -1435,7 +1593,8 @@
     {
       "colaborador_id": "IB-PA-00158",
       "id_fuente": 158,
-      "nombre": "Villaseñor Ríos, José Luis",
+      "apellidos": "Villaseñor Ríos",
+      "nombre": "José Luis",
       "linea_trabajo": "Sistemática y biogeografía de Asteraceae",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=Y2lPalg5OEd0TTdvU3ZNUTRoRVdNQT09",
@@ -1444,7 +1603,8 @@
     {
       "colaborador_id": "IB-PA-00159",
       "id_fuente": 159,
-      "nombre": "Villavicencio Cisneros, Joel",
+      "apellidos": "Villavicencio Cisneros",
+      "nombre": "Joel",
       "linea_trabajo": "Ingeniería eléctrica, electrónica y comunicaciones",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=NVpVS1o2UkVyeXNaNGFOcmVYbi9Cdz09",
@@ -1453,7 +1613,8 @@
     {
       "colaborador_id": "IB-PA-00160",
       "id_fuente": 160,
-      "nombre": "Wegier Briuolo, Ana Laura",
+      "apellidos": "Wegier Briuolo",
+      "nombre": "Ana Laura",
       "linea_trabajo": "Genética de la conservación, Conservación y manejo de especies con centros de origen y diversidad mesoamericanos, y Evolución",
       "categoria": "Investigador titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=dUFidkFRUWMyNS9oVmtSWFUvWVRuZz09",
@@ -1462,7 +1623,8 @@
     {
       "colaborador_id": "IB-PA-00161",
       "id_fuente": 161,
-      "nombre": "Wong León, José Alfredo",
+      "apellidos": "Wong León",
+      "nombre": "José Alfredo",
       "linea_trabajo": "Seguridad, informática y servidores",
       "categoria": "Técnico académico titular B",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=YTlKQXQ4Yk5NVzRiQmxXeUI2YVZVZz09",
@@ -1471,7 +1633,8 @@
     {
       "colaborador_id": "IB-PA-00162",
       "id_fuente": 162,
-      "nombre": "Zaldívar Riverón, Alejandro",
+      "apellidos": "Zaldívar Riverón",
+      "nombre": "Alejandro",
       "linea_trabajo": "Sistemática de insectos, avispas parasitoides de la familia Braconidae",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=UWZTWHRGWm9lc3FpbGUyNzdqT2lMQT09",
@@ -1480,7 +1643,8 @@
     {
       "colaborador_id": "IB-PA-00163",
       "id_fuente": 163,
-      "nombre": "Zambrano González, Luis",
+      "apellidos": "Zambrano González",
+      "nombre": "Luis",
       "linea_trabajo": "Ecología y restauración de comunidades acuáticas",
       "categoria": "Investigador titular C",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=VGp5MDNEa1EzK2J4S3FVNFNtTWtFZz09",
@@ -1489,7 +1653,8 @@
     {
       "colaborador_id": "IB-PA-00164",
       "id_fuente": 164,
-      "nombre": "Zárate Aquino, Margarita Araceli",
+      "apellidos": "Zárate Aquino",
+      "nombre": "Margarita Araceli",
       "linea_trabajo": "Fitotecnia",
       "categoria": "Técnico académico titular A",
       "perfil_url_relativa": "/ib/directorio-del-personal-academico/perfil/index.php?crypt=cmNSKzEzbnYvUUNPa2EwNXRJV1pqdz09",
