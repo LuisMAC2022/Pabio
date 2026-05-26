@@ -3,33 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pabio | Control de archivos</title>
+  <title>Pabio | Simulación de validación de ID</title>
   <link rel="stylesheet" href="assets/css/base.css">
-  <link rel="stylesheet" href="assets/css/layout.css">
-  <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/a11y.css">
-  <script type="module" src="assets/js/app.js" defer></script>
 </head>
-<body data-view="inicio">
+<body>
   <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
-  <header class="site-header">
-    <div class="brand"><img src="assets/img/logo-pabio.svg" alt="Logo Pabio" width="36" height="36"><h1>Pabio</h1></div>
-    <nav aria-label="Navegación principal">
-      <ul class="nav-list">
-        <li><a href="index.html">Inicio</a></li><li><a href="pages/ordenes.html">Órdenes</a></li><li><a href="pages/inventario.html">Inventario</a></li><li><a href="pages/solicitudes.html">Solicitudes</a></li>
-      </ul>
-    </nav>
-  </header>
   <main id="contenido" class="container">
-    <section><h2>Resumen del sistema</h2><p>Gestiona órdenes, inventario y solicitudes de compra desde una sola interfaz.</p></section>
-    <section class="cards" aria-label="Accesos rápidos">
-      <a class="card" href="pages/crear-orden.html"><h3>Crear orden</h3></a>
-      <a class="card" href="pages/ordenes.html"><h3>Ver órdenes</h3></a>
-      <a class="card" href="pages/agregar-material.html"><h3>Agregar material</h3></a>
-      <a class="card" href="pages/contrastar-orden.html"><h3>Contrastar orden</h3></a>
-      <a class="card" href="pages/generar-solicitud.html"><h3>Generar solicitud</h3></a>
-    </section>
+    <h1>Simulacion de validacion de ID</h1>
+    <form id="login-form" novalidate>
+      <label for="id-input">Ingresa tu ID</label>
+      <input
+        id="id-input"
+        name="id"
+        type="text"
+        inputmode="numeric"
+        autocomplete="off"
+        required
+        aria-describedby="id-help id-error"
+      >
+      <p id="id-help">Usa solo números. También puedes ingresar con ceros a la izquierda.</p>
+      <button type="submit">Continuar</button>
+      <p id="id-error" role="alert" aria-live="polite" tabindex="-1"></p>
+    </form>
   </main>
-  <footer class="site-footer"><small>Demo MVP de control de archivos</small></footer>
+
+  <script>
+    (() => {
+      const form = document.getElementById('login-form');
+      const idInput = document.getElementById('id-input');
+      const errorBox = document.getElementById('id-error');
+
+      const showError = (message, focusTarget = errorBox) => {
+        errorBox.textContent = message;
+        focusTarget.focus();
+      };
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        errorBox.textContent = '';
+
+        const raw = idInput.value.trim();
+        if (!/^\d+$/.test(raw)) {
+          showError('Ingresa un ID numérico válido.', idInput);
+          return;
+        }
+
+        const normalized = raw.replace(/^0+/, '') || '0';
+
+        try {
+          const response = await fetch('data/directorio.json', { cache: 'no-store' });
+          if (!response.ok) {
+            showError('No se pudo validar el ID. Intenta nuevamente.');
+            return;
+          }
+
+          const directory = await response.json();
+          const match = directory.find((entry) => String(entry.id_fuente) === normalized);
+
+          if (!match) {
+            showError('ID no encontrado.', idInput);
+            return;
+          }
+
+          sessionStorage.setItem('pabioLoginUser', JSON.stringify({
+            id: normalized,
+            nombre: String(match.nombre || '').trim()
+          }));
+
+          window.location.assign('pages/index.html');
+        } catch {
+          showError('Error de red al consultar el directorio.');
+        }
+      });
+    })();
+  </script>
 </body>
 </html>

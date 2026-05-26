@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pabio | Control de archivos</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/a11y.css">
+  <script type="module" src="../assets/js/app.js" defer></script>
+</head>
+<body data-view="inicio">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <header class="site-header">
+    <div class="brand">
+      <img src="../assets/img/logo-pabio.svg" alt="Logo Pabio" width="36" height="36">
+      <h1 id="saludo">Bienvenido</h1>
+    </div>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="ordenes.html">Órdenes</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="solicitudes.html">Solicitudes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="contenido" class="container">
+    <section>
+      <h2>Resumen del sistema</h2>
+      <p>Gestiona órdenes, inventario y solicitudes de compra desde una sola interfaz.</p>
+    </section>
+    <section class="cards" aria-label="Accesos rápidos">
+      <a class="card" href="crear-orden.html"><h3>Crear orden</h3></a>
+      <a class="card" href="ordenes.html"><h3>Ver órdenes</h3></a>
+      <a class="card" href="agregar-material.html"><h3>Agregar material</h3></a>
+      <a class="card" href="contrastar-orden.html"><h3>Contrastar orden</h3></a>
+      <a class="card" href="generar-solicitud.html"><h3>Generar solicitud</h3></a>
+    </section>
+  </main>
+  <footer class="site-footer"><small>Demo MVP de control de archivos</small></footer>
+  <script>
+    (() => {
+      const userDataRaw = sessionStorage.getItem('pabioLoginUser');
+      if (!userDataRaw) {
+        window.location.replace('../index.html');
+        return;
+      }
+
+      try {
+        const userData = JSON.parse(userDataRaw);
+        if (!userData?.nombre) {
+          window.location.replace('../index.html');
+          return;
+        }
+
+        const greeting = document.getElementById('saludo');
+        greeting.textContent = `Bienvenido ${userData.nombre}`;
+      } catch {
+        window.location.replace('../index.html');
+      }
+    })();
+  </script>
+</body>
+</html>
